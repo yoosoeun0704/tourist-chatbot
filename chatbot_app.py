@@ -15,6 +15,14 @@ for i in range(5):
 for p in processes:
     p.join()
 
+import threading
+
+lock = threading.Lock()
+
+def shared_resource_access():
+    with lock:
+        # 공유 자원에 접근하는 코드
+        
 code = """
 import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
