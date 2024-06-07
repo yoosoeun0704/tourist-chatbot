@@ -1,7 +1,15 @@
-import streamlit as st
-import streamlit_sync
-with streamlit_sync.sync("default_room"):
-    app()
+import queue
+
+request_queue = queue.Queue()
+
+def handle_request(request):
+    # 요청을 대기열에 추가
+    request_queue.put(request)
+
+def process_queue():
+    while not request_queue.empty():
+        request = request_queue.get()
+        # 요청 처리
 
 code = """
 import streamlit as st
