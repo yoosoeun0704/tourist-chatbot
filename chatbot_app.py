@@ -11,23 +11,19 @@ tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 tourist_spots = {
     "팜랜드": {
         "description": "안성 팜랜드는 다양한 동물과 자연을 즐길 수 있는 테마파크입니다.",
-        "image_url": "https://example.com/images/farm_land.jpg"  # 실제 이미지 URL로 교체
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMTlfMTE4%2FMDAxNjk3NjQxMjg1NTM3.Fcjp-dKWWdrHRazvq9dfXJPcsN-JRnHN8coGpcsuJxog.FWfzF-789oEEQXTB9IPpvZ682J4IqfP2wjDuAbAfzeog.JPEG.otter86%2F1697641262847.jpg&type=sc960_832"  # 실제 이미지 URL로 교체
     },
     "남사당놀이마을": {
         "description": "안성 남사당놀이마을은 한국 전통 공연과 문화를 체험할 수 있는 곳입니다.",
-        "image_url": "https://example.com/images/namsadang.jpg"  # 실제 이미지 URL로 교체
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140707_222%2Fhjne121_1404712263020yeWwV_PNG%2F11.png&type=sc960_832"  # 실제 이미지 URL로 교체
     },
     "안성맞춤랜드": {
         "description": "안성맞춤랜드는 가족과 함께 즐길 수 있는 놀이 시설과 자연 경관을 제공합니다.",
-        "image_url": "https://example.com/images/ansung_land.jpg"  # 실제 이미지 URL로 교체
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA1MjJfMjEx%2FMDAxNDk1NDI1NDE3NDQx.0GN2nJlWyUjjQyiVNc2Ie7kUMHqMu7P1Sw69D5iSdzgg.Jpw9sLfl77Z-Mu8UkNzL8OvbxfVYPyS-64QnlNb7gwog.JPEG.wendellgee%2FDSC_5996.jpg&type=sc960_832"  # 실제 이미지 URL로 교체
     },
     "서운산": {
         "description": "서운산은 아름다운 경관과 등산로로 유명한 산입니다.",
-        "image_url": "https://example.com/images/seo_onsan.jpg"  # 실제 이미지 URL로 교체
-    },
-    "안성천생태공원": {
-        "description": "안성천생태공원은 자연 생태계를 체험할 수 있는 공원입니다.",
-        "image_url": "https://example.com/images/ansung_eco_park.jpg"  # 실제 이미지 URL로 교체
+        "image_url": "https://blog.naver.com/storyphoto/viewer.jsp?src=https%3A%2F%2Fimage.foresttrip.go.kr%2Ffrip%2F96c9c76b-1139-4403-a45e-c456f4b173fd.jpg"  # 실제 이미지 URL로 교체
     }
 }
 
