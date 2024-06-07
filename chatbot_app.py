@@ -1,5 +1,9 @@
 import streamlit as st
-import streamlit_sync
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+import streamlit_sync as ss
+
+# Streamlit Sync 설정
+ss.enter_room("chatbot_room")
 
 # Streamlit Sync를 사용하여 방에 입장
 streamlit_sync.enter_room("chatbot")
@@ -62,7 +66,7 @@ if st.button("대답하기"):
     else:
         st.write(response)
 """
-streamlit_sync.exit_room()
+ss.exit_room()
 
 with open("chatbot_app.py", "w") as file:
     file.write(code)
