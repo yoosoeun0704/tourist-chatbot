@@ -67,6 +67,3 @@ if st.button("대답하기"):
         st.write(response)
 """
 ss.exit_room()
-
-with open("chatbot_app.py", "w") as file:
-    file.write(code)
