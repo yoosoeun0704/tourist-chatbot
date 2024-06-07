@@ -1,3 +1,20 @@
+import multiprocessing
+
+# 작업할 함수 정의
+def worker(num):
+    print(f"Worker {num} is working")
+
+# 프로세스 생성 및 실행
+processes = []
+for i in range(5):
+    p = multiprocessing.Process(target=worker, args=(i,))
+    processes.append(p)
+    p.start()
+
+# 모든 프로세스의 종료를 기다림
+for p in processes:
+    p.join()
+
 code = """
 import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
