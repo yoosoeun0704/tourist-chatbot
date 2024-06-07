@@ -1,15 +1,8 @@
-import queue
+import streamlit as st
+import streamlit_sync
 
-request_queue = queue.Queue()
-
-def handle_request(request):
-    # 요청을 대기열에 추가
-    request_queue.put(request)
-
-def process_queue():
-    while not request_queue.empty():
-        request = request_queue.get()
-        # 요청 처리
+# Streamlit Sync를 사용하여 방에 입장
+streamlit_sync.enter_room("chatbot")
 
 code = """
 import streamlit as st
@@ -69,6 +62,7 @@ if st.button("대답하기"):
     else:
         st.write(response)
 """
+streamlit_sync.exit_room()
 
 with open("chatbot_app.py", "w") as file:
     file.write(code)
