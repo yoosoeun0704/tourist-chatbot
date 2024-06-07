@@ -60,3 +60,60 @@ if st.button("대답하기"):
                 st.write(f"**{spot}**: {info['description']}")
     else:
         st.write(response)
+
+#############################
+import streamlit as st
+import threading
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from tornado import web, httpserver, ioloop
+
+# Streamlit 애플리케이션을 실행하는 함수
+def start_streamlit():
+    # Streamlit UI
+    st.title("T.OUR : 최선의 관광지를 추천해드립니다")
+    user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
+    if st.button("대답하기"):
+        response = chatbot_response(user_input)
+        if isinstance(response, list):
+            for spot in response:
+                info = tourist_spots.get(spot)
+                if info:
+                    st.image(info['image_url'], caption=spot)
+                    st.write(f"**{spot}**: {info['description']}")
+        else:
+            st.write(response)
+
+# Tornado 웹 서버를 실행하는 함수
+def start_web_server():
+    # Tornado 웹 애플리케이션 설정
+    class MainHandler(web.RequestHandler):
+        def get(self):
+            self.write("T.OUR : 최선의 관광지를 추천해드립니다")
+            user_input = self.get_argument("user_input", None)
+            if user_input:
+                response = chatbot_response(user_input)
+                if isinstance(response, list):
+                    for spot in response:
+                        info = tourist_spots.get(spot)
+                        if info:
+                            self.write(f"<img src='{info['image_url']}' alt='{spot}'><br>")
+                            self.write(f"<strong>{spot}</strong>: {info['description']}<br>")
+                else:
+                    self.write(response)
+
+    app = web.Application([
+        (r"/", MainHandler),
+    ])
+
+    http_server = httpserver.HTTPServer(app)
+    http_server.listen(8501)
+    ioloop.IOLoop.current().start()
+
+# 메인 함수
+if __name__ == "__main__":
+    # Streamlit 애플리케이션을 멀티 스레드로 실행
+    streamlit_thread = threading.Thread(target=start_streamlit)
+    streamlit_thread.start()
+
+    # Tornado 웹 서버를 실행
+    start_web_server()
