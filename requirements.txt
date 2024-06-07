@@ -1,4 +1,4 @@
 streamlit==1.4.0
 transformers
 torch
-streamlit_sync
+threading
