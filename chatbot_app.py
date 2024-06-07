@@ -1,6 +1,7 @@
 import streamlit as st
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import threading
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from tornado import web, httpserver, ioloop
 
 # Lock 객체 생성
 lock = threading.Lock()
@@ -47,26 +48,6 @@ def chatbot_response(user_input):
                 return [spot]
         return generate_response(user_input, model, tokenizer)
 
-# Streamlit UI
-st.title("T.OUR : 최선의 관광지를 추천해드립니다")
-user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
-if st.button("대답하기"):
-    response = chatbot_response(user_input)
-    if isinstance(response, list):
-        for spot in response:
-            info = tourist_spots.get(spot)
-            if info:
-                st.image(info['image_url'], caption=spot)
-                st.write(f"**{spot}**: {info['description']}")
-    else:
-        st.write(response)
-
-#############################
-import streamlit as st
-import threading
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
-from tornado import web, httpserver, ioloop
-
 # Streamlit 애플리케이션을 실행하는 함수
 def start_streamlit():
     # Streamlit UI
@@ -106,7 +87,7 @@ def start_web_server():
     ])
 
     http_server = httpserver.HTTPServer(app)
-    http_server.listen(8501)
+    http_server.listen(8502)  # 다른 포트 사용
     ioloop.IOLoop.current().start()
 
 # 메인 함수
