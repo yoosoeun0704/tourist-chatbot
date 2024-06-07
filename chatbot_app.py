@@ -43,7 +43,7 @@ def chatbot_response(user_input):
     return generate_response(user_input, model, tokenizer)
 
 # Streamlit UI
-st.title("T.OUR")
+st.title("T.OUR : 최선의 관광지를 추천해드립니다")
 user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
 if st.button("대답하기"):
     response = chatbot_response(user_input)
