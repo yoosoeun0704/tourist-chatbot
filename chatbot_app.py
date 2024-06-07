@@ -1,3 +1,7 @@
+!pip install streamlit
+!pip install transformers
+!pip install torch
+
 code = """
 import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
