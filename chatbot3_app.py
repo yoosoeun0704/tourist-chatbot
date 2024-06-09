@@ -2,6 +2,13 @@ import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import random
 
+# 반복적으로 스트림릿을 실행해도 닫히지 않도록 하는 코드
+import threading
+def streamlit_run():
+    st.button("Stop Streamlit")
+streamlit_thread = threading.Thread(target=streamlit_run)
+streamlit_thread.start()
+
 # 모델과 토크나이저 로드
 model_name = "gpt2"
 model = GPT2LMHeadModel.from_pretrained(model_name)
