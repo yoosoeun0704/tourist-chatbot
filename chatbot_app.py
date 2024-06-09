@@ -11,7 +11,7 @@ def generate_response(prompt):
         },
         "남사당놀이마을": {
             "description": "안성 남사당놀이마을은 한국 전통 공연과 문화를 체험할 수 있는 곳입니다.",
-            "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140707_222%2Fhjne121_1404712263020yeWwV_PNG%2F11.png"
+            "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140930_238%2Funique_space_1412004099043pC1li_PNG%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2014-09-30_%25BF%25C0%25C0%25FC_12.21.24.png&type=sc960_832"
         },
         "안성맞춤랜드": {
             "description": "안성맞춤랜드는 가족과 함께 즐길 수 있는 놀이 시설과 자연 경관을 제공합니다.",
@@ -34,6 +34,8 @@ if st.button("대답하기"):
     if isinstance(response, dict):
         # 이미지 URL 가져오기
         image_url = response["image_url"]
+        # 이미지 URL을 출력하여 확인
+        st.write(f"이미지 URL: {image_url}")
         # 이미지 표시
         st.image(image_url, caption=user_input)
         st.write(f"**{user_input}**: {response['description']}")
