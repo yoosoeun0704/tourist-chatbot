@@ -1,8 +1,5 @@
 import streamlit as st
 import random
-from PIL import Image
-import requests
-from io import BytesIO
 
 # GPT 모델 정의
 def generate_response(prompt):
@@ -35,11 +32,7 @@ user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
 if st.button("대답하기"):
     response = generate_response(user_input)
     if isinstance(response, dict):
-        # 이미지 가져오기
-        image_url = response["image_url"]
-        image = Image.open(BytesIO(requests.get(image_url).content))
-        # 이미지 표시
-        st.image(image, caption=user_input)
+        st.markdown(f"![{user_input}]({response['image_url']})")
         st.write(f"**{user_input}**: {response['description']}")
     else:
         st.write(response)
