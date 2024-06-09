@@ -28,7 +28,7 @@ tourist_spots = {
 # GPT 모델 정의
 def generate_response(prompt):
     responses = {
-        "안성의 관광명소를 추천해줘": ["팜랜드", "남사당놀이마을", "안성맞춤랜드"],
+        "안성의 관광명소를 추천해줘": ["팜랜드", "남사당놀이마을", "안성맞춤랜드", "서운산", "안성천생태공원"],
         "팜랜드": {
             "description": "안성 팜랜드는 다양한 동물과 자연을 즐길 수 있는 테마파크입니다.",
             "image_url": "https://example.com/images/farm_land.jpg"  # 실제 이미지 URL로 교체
@@ -41,6 +41,7 @@ def generate_response(prompt):
             "description": "안성맞춤랜드는 가족과 함께 즐길 수 있는 놀이 시설과 자연 경관을 제공합니다.",
             "image_url": "https://example.com/images/ansung_land.jpg"  # 실제 이미지 URL로 교체
         }
+        
     }
     if prompt in responses:
         if isinstance(responses[prompt], list):
@@ -72,11 +73,14 @@ streamlit_thread = threading.Thread(target=streamlit_run)
 streamlit_thread.start()
 
 # 방법 2: Tornado를 사용하는 방식
+# 방법 2: Tornado를 사용하는 방식
 from tornado import web, httpserver, ioloop
+
 class MainHandler(web.RequestHandler):
     def get(self):
         self.write("Streamlit running!")
+
 app = web.Application([(r"/", MainHandler)])
 http_server = httpserver.HTTPServer(app)
-http_server.listen(8501)
+http_server.listen(8502)  # 포트를 8502로 변경
 ioloop.IOLoop.current().start()
