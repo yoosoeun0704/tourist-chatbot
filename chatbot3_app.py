@@ -35,30 +35,21 @@ def generate_response(prompt, model, tokenizer, max_length=50):
 
 def chatbot_response(user_input):
     if "안성의 관광명소를 추천해줘" in user_input:
-        recommendations = list(tourist_spots.keys())[:3]
         random_recommendation = random.choice(list(tourist_spots.keys()))
-        return recommendations, random_recommendation
+        return random_recommendation
     for spot in tourist_spots.keys():
         if spot in user_input:
-            return [spot], None
-    return generate_response(user_input, model, tokenizer), None
+            return spot
+    return generate_response(user_input, model, tokenizer)
 
 # Streamlit UI
 st.title("안성 관광명소 챗봇")
 user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
 if st.button("대답하기"):
-    response, random_recommendation = chatbot_response(user_input)
-    if isinstance(response, list):
-        for spot in response:
-            info = tourist_spots.get(spot)
-            if info:
-                st.image(info['image_url'], caption=spot)
-                st.write(f"**{spot}**: {info['description']}")
-        if random_recommendation:
-            st.write("이 곳을 추천해드립니다:")
-            info = tourist_spots.get(random_recommendation)
-            if info:
-                st.image(info['image_url'], caption=random_recommendation)
-                st.write(f"**{random_recommendation}**: {info['description']}")
+    response = chatbot_response(user_input)
+    if response in tourist_spots:
+        info = tourist_spots.get(response)
+        st.image(info['image_url'], caption=response)
+        st.write(f"**{response}**: {info['description']}")
     else:
         st.write(response)
