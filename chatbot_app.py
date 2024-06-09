@@ -1,47 +1,25 @@
 import streamlit as st
 import random
-
-# 관광 명소 정보
-tourist_spots = {
-    "팜랜드": {
-        "description": "안성 팜랜드는 다양한 동물과 자연을 즐길 수 있는 테마파크입니다.",
-        "image_url": "https://example.com/images/farm_land.jpg"  # 실제 이미지 URL로 교체
-    },
-    "남사당놀이마을": {
-        "description": "안성 남사당놀이마을은 한국 전통 공연과 문화를 체험할 수 있는 곳입니다.",
-        "image_url": "https://example.com/images/namsadang.jpg"  # 실제 이미지 URL로 교체
-    },
-    "안성맞춤랜드": {
-        "description": "안성맞춤랜드는 가족과 함께 즐길 수 있는 놀이 시설과 자연 경관을 제공합니다.",
-        "image_url": "https://example.com/images/ansung_land.jpg"  # 실제 이미지 URL로 교체
-    },
-    "서운산": {
-        "description": "서운산은 아름다운 경관과 등산로로 유명한 산입니다.",
-        "image_url": "https://example.com/images/seo_onsan.jpg"  # 실제 이미지 URL로 교체
-    },
-    "안성천생태공원": {
-        "description": "안성천생태공원은 자연 생태계를 체험할 수 있는 공원입니다.",
-        "image_url": "https://example.com/images/ansung_eco_park.jpg"  # 실제 이미지 URL로 교체
-    }
-}
+from PIL import Image
+import requests
+from io import BytesIO
 
 # GPT 모델 정의
 def generate_response(prompt):
     responses = {
-        "안성의 관광명소를 추천해줘": ["팜랜드", "남사당놀이마을", "안성맞춤랜드", "서운산", "안성천생태공원"],
+        "안성의 관광명소를 추천해줘": ["팜랜드", "남사당놀이마을", "안성맞춤랜드"],
         "팜랜드": {
             "description": "안성 팜랜드는 다양한 동물과 자연을 즐길 수 있는 테마파크입니다.",
-            "image_url": "https://example.com/images/farm_land.jpg"  # 실제 이미지 URL로 교체
+            "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMTlfMTE4%2FMDAxNjk3NjQxMjg1NTM3.Fcjp-dKWWdrHRazvq9dfXJPcsN-JRnHN8coGpcsuJxog.FWfzF-789oEEQXTB9IPpvZ682J4IqfP2wjDuAbAfzeog.JPEG.otter86%2F1697641262847.jpg"
         },
         "남사당놀이마을": {
             "description": "안성 남사당놀이마을은 한국 전통 공연과 문화를 체험할 수 있는 곳입니다.",
-            "image_url": "https://example.com/images/namsadang.jpg"  # 실제 이미지 URL로 교체
+            "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140707_222%2Fhjne121_1404712263020yeWwV_PNG%2F11.png"
         },
         "안성맞춤랜드": {
             "description": "안성맞춤랜드는 가족과 함께 즐길 수 있는 놀이 시설과 자연 경관을 제공합니다.",
-            "image_url": "https://example.com/images/ansung_land.jpg"  # 실제 이미지 URL로 교체
+            "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA1MjJfMjEx%2FMDAxNDk1NDI1NDE3NDQx.0GN2nJlWyUjjQyiVNc2Ie7kUMHqMu7P1Sw69D5iSdzgg.Jpw9sLfl77Z-Mu8UkNzL8OvbxfVYPyS-64QnlNb7gwog.JPEG.wendellgee%2FDSC_5996.jpg"
         }
-        
     }
     if prompt in responses:
         if isinstance(responses[prompt], list):
@@ -57,31 +35,11 @@ user_input = st.text_input("안성의 관광명소에 대해 물어보세요!")
 if st.button("대답하기"):
     response = generate_response(user_input)
     if isinstance(response, dict):
-        for spot, info in tourist_spots.items():
-            if spot == response["description"]:
-                st.image(info['image_url'], caption=spot)
-                st.write(f"**{spot}**: {response['description']}")
+        # 이미지 가져오기
+        image_url = response["image_url"]
+        image = Image.open(BytesIO(requests.get(image_url).content))
+        # 이미지 표시
+        st.image(image, caption=user_input)
+        st.write(f"**{user_input}**: {response['description']}")
     else:
         st.write(response)
-
-# 반복적으로 스트림릿을 실행해도 닫히지 않도록 하는 코드
-# 방법 1: 스레드를 사용하는 방식
-import threading
-def streamlit_run():
-    st.button("Stop Streamlit")
-streamlit_thread = threading.Thread(target=streamlit_run)
-streamlit_thread.start()
-
-# 방법 2: Tornado를 사용하는 방식
-from tornado import web, httpserver, ioloop
-
-class MainHandler(web.RequestHandler):
-    def get(self):
-        self.write("Streamlit running!")
-
-app = web.Application([(r"/", MainHandler)])
-
-http_server = httpserver.HTTPServer(app)
-http_server.listen(8503)  # 변경된 포트 번호로 설정
-
-ioloop.IOLoop.current().start()
