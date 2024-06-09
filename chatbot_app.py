@@ -73,7 +73,6 @@ streamlit_thread = threading.Thread(target=streamlit_run)
 streamlit_thread.start()
 
 # 방법 2: Tornado를 사용하는 방식
-# 방법 2: Tornado를 사용하는 방식
 from tornado import web, httpserver, ioloop
 
 class MainHandler(web.RequestHandler):
@@ -81,6 +80,8 @@ class MainHandler(web.RequestHandler):
         self.write("Streamlit running!")
 
 app = web.Application([(r"/", MainHandler)])
+
 http_server = httpserver.HTTPServer(app)
-http_server.listen(8502)  # 포트를 8502로 변경
+http_server.listen(8503)  # 변경된 포트 번호로 설정
+
 ioloop.IOLoop.current().start()
