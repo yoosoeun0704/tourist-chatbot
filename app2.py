@@ -337,7 +337,7 @@ destinations = [
     {
         "name": "광주 화담숲",
         "description": "화담숲은 다양한 식물과 아름다운 경관을 제공하는 힐링 공간입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMjBfMTQ0%2FMDAxNjY2MjM4NzEzNDI1.qCO0t7FNTsrmJe6top5AlUcBlC5JvoZGXSoZoUQHieQg.mFy1vdqnjivvmyWgqpgttzzt1V0geiSLjNkk4LjyXcIg.JPEG.dal831%2F20221016%25A3%25DF111958.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "화담숲은 광주에 위치한 큰 규모의 정원으로, 자연과 조화롭게 어우러진 다양한 식물들을 감상할 수 있는 공간입니다. 특히 봄과 가을에는 다양한 꽃과 단풍을 즐길 수 있는 명소로 알려져 있습니다.",
         "surrounding_area": "화담숲 주변에는 카페와 음식점들이 많아, 자연을 만끽하며 여유롭게 음식을 즐기기에 좋은 장소입니다."
