@@ -361,7 +361,7 @@ destinations = [
     {
         "name": "포천 허브아일랜드",
         "description": "허브아일랜드는 다양한 허브와 식물을 체험할 수 있는 공간으로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMjBfMjQ0%2FMDAxNjk3NzU0MTU1NDA3.L9G4pFLgwD9Kbb9nToi12JdU5R2UYENX3c0CszIFGHwg.Dzd9uHcj4lTHc_pqLbb5jghUjNi7HIAY-ETpzNtWsd8g.JPEG.maum0577%2F4.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "포천 허브아일랜드는 허브를 테마로 한 정원과 테마파크로, 향긋한 허브 향을 즐기며 다양한 체험을 할 수 있는 공간입니다. 허브를 이용한 다양한 상품을 구매할 수 있으며, 허브 요리 체험도 가능합니다.",
         "surrounding_area": "허브아일랜드 주변에는 허브를 주제로 한 카페와 레스토랑이 많아, 자연 속에서 여유로운 시간을 보낼 수 있는 장소입니다."
