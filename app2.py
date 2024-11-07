@@ -8,42 +8,50 @@ destinations = [
         "description": "한국의 전통과 역사를 경험할 수 있는 서울의 대표 유적지입니다.",
         "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MDRfODcg%2FMDAxNzI1NDU5OTg1ODcx.20ZW5yxoZO6aCc1Ds-nDzGMyAx-qObh5n9Ke5Jo3HVYg.JA7cHnv7gZ2JWYfRzBJ5s-xZVCq40sBvwqOmLGsZ5kog.JPEG%2F3C4A9776_1.jpg&type=sc960_832",
         "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"],
-        "summary": "경복궁은 조선 왕조의 중심 궁궐로, 한국 전통 건축의 아름다움을 경험할 수 있습니다. 왕실의 역사와 문화, 궁궐 내부의 아름다운 정원과 건축물을 감상할 수 있습니다. 서울 중심에 위치해 있어 다른 주요 관광지와의 접근성이 뛰어납니다.",
-        "surrounding": "인사동: 전통 공예품과 한식 찻집, 갤러리들이 모여있는 문화 거리. 광화문: 서울의 행정 중심지로, 다양한 상업 시설과 레스토랑이 밀집해 있습니다. 북촌 한옥마을: 전통 한옥을 체험할 수 있는 장소로, 고즈넉한 분위기에서 한국 문화를 느낄 수 있습니다."
+        "summary": "경복궁은 서울의 대표적인 궁궐로, 조선 시대의 역사와 문화유산을 경험할 수 있습니다.",
+        "surrounding_area": "경복궁 근처에는 북촌한옥마을과 인사동길이 있어 전통 문화를 더욱 체험할 수 있습니다."
     },
     {
-        "name": "수원화성",
-        "description": "한국의 전통과 역사를 경험할 수 있는 수원의 대표 유적지입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MjNfMTYw%2FMDAxNzE2MzkwNDkzNTkw.hGbTTrdhPUfzRFbRWP43dpPpRTLXfWC2QbadfEv-ewcg.-J48L9rp25B-ek0ZpX-fiVUQIpyctcjCV34yJC3RRDkg.JPEG%2F20240426-_C6A8780.jpg&type=sc960_832",
-        "tags": ["문화, 역사 탐방", "도심", "사진 명소", "유적지", "문화 체험"],
-        "summary": "수원화성은 조선시대의 대표적인 성곽으로, 군사적, 역사적 가치를 지닌 곳입니다. 성곽을 따라 걸으며 고유의 건축미와 함께 다양한 유적을 경험할 수 있습니다. 한국 역사와 문화에 대해 더 깊이 이해할 수 있는 기회입니다.",
-        "surrounding": "수원시청: 수원 중심지에 위치하며, 다양한 먹거리와 쇼핑을 즐길 수 있습니다. 수원역: 교통이 편리하며 다양한 상업시설과 레스토랑이 밀집해 있습니다. 팔달문: 수원 화성의 중요한 문으로, 수원 문화의 중심을 느낄 수 있습니다."
-    },
-    {
-        "name": "서울숲",
-        "description": "푸르른 한강과 함께 자연을 즐길 수 있는 서울의 인기있는 힐링 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200728_296%2F1595899415265D5A3d_JPEG%2F%25B0%25A1%25C1%25B7%25B8%25B6%25B4%25E71.jpg",
-        "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"],
-        "summary": "서울숲은 서울시내에서 자연을 만끽할 수 있는 도심 속 공원입니다. 자전거와 산책로, 다양한 야생 동물을 만날 수 있는 동물원도 있어 가족 단위 방문객에게 인기가 많습니다. 도심 속 자연을 찾는 여행객에게 안성맞춤인 명소입니다.",
-        "surrounding": "압구정: 트렌디한 카페와 쇼핑몰이 밀집한 지역. 성수동: 인디 감성의 가게들과 현대적인 분위기의 레스토랑들이 많습니다. 한강: 자전거와 산책을 즐길 수 있는 넓은 공간."
+        "name": "인사동길",
+        "description": "한국의 전통 공예품과 예술작품을 구매할 수 있는 거리입니다.",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMTRfMTg3%2FMDAxNjcwNzEwMzE3NTgx.a1w6ffUSGpSM0f5v1ZYjXUlsOXScfsFbBuwBOms7J0wg.6W1OpdRfpGZAfTg9nmJSZn9TnMlIHmlHL4ohbyhP0o8g.JPEG%2FIMG_2724.jpg&type=sc960_832",
+        "tags": ["문화, 역사 탐방", "도심", "전통", "예술", "사진 명소"],
+        "summary": "인사동길은 한국 전통과 현대적 예술이 어우러진 곳으로 다양한 공예품을 구매할 수 있습니다.",
+        "surrounding_area": "인사동길 주변에는 경복궁, 북촌한옥마을, 그리고 다양한 전통 찻집이 있습니다."
     },
     {
         "name": "남산서울타워",
         "description": "서울 도심 속에서 밝게 빛나는 야경 명소입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
-        "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"],
-        "summary": "남산서울타워는 서울의 전경을 한눈에 볼 수 있는 명소입니다. 낮에는 서울 시내의 아름다운 풍경을, 밤에는 야경을 즐길 수 있어 연인들에게도 인기 있는 장소입니다. 타워에서 내려다보는 서울은 그 자체로 멋진 사진 명소입니다.",
-        "surrounding": "남산: 서울의 중심에 위치한 산으로, 산책로와 자연을 즐길 수 있는 공간입니다. 이태원: 다양한 문화가 어우러진 지역으로, 다국적 음식점과 상점들이 많습니다."
+        "tags": ["자연 탐험", "자연", "사진 명소", "힐링", "좋은 접근성"],
+        "summary": "남산서울타워는 서울의 전경을 한눈에 볼 수 있는 명소로, 야경이 특히 아름답습니다.",
+        "surrounding_area": "남산서울타워 주변에는 남산공원이 있어 산책이나 하이킹을 즐기기 좋습니다."
     },
     {
-        "name": "더현대 서울",
-        "description": "즐거운 먹거리를 즐기고, 쇼핑을 할 수 있는 현대백화점 더현대 서울입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210527_297%2F16220986701968f1N7_JPEG%2F1.jpg",
-        "tags": ["쇼핑", "도심", "사진 명소", "새로운 음식 시도", "좋은 접근성"],
-        "summary": "더현대 서울은 최신 트렌드의 패션 브랜드와 다양한 먹거리가 결합된 공간입니다. 다양한 레스토랑, 카페, 매장들이 모여 있어 쇼핑과 미식을 동시에 즐길 수 있습니다. 편리한 교통 접근성과 넓은 공간 덕분에 방문객들에게 매우 인기가 많습니다.",
-        "surrounding": "영등포: 서울의 상업 중심지로, 다양한 쇼핑몰과 레스토랑이 밀집해 있습니다. 여의도: 금융의 중심지로, 고급 레스토랑과 문화 시설들이 있습니다."
+        "name": "서울 국립중앙박물관",
+        "description": "한국의 역사와 문화를 배우고 체험할 수 있는 박물관입니다.",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190930_201%2F15698070053875P5RY_JPEG%2F2020_서울국립중앙박물관.jpg&type=sc960_832",
+        "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"],
+        "summary": "서울 국립중앙박물관은 한국의 역사적인 유물을 전시하며, 문화 탐방에 이상적인 장소입니다.",
+        "surrounding_area": "박물관 근처에는 이태원과 한남동이 있어 다양한 음식과 쇼핑을 즐길 수 있습니다."
     },
-    # 추가 관광지 데이터...
+    {
+        "name": "북촌한옥마을",
+        "description": "조선시대의 전통 가옥인 한옥을 경험할 수 있는 곳입니다.",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191009_21%2F1570608403202uFsHs_JPEG%2F1570608403202.jpg&type=sc960_832",
+        "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"],
+        "summary": "북촌한옥마을은 전통적인 한옥이 모여있는 지역으로, 고즈넉한 분위기 속에서 전통 문화를 체험할 수 있습니다.",
+        "surrounding_area": "북촌한옥마을 근처에는 경복궁과 인사동이 있어 한국의 전통 문화를 함께 즐길 수 있습니다."
+    },
+    {
+        "name": "명동거리",
+        "description": "서울의 대표적인 쇼핑 거리로, 다양한 브랜드와 맛집이 즐비한 곳입니다.",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
+        "tags": ["쇼핑", "도심", "사진 명소", "새로운 음식 시도", "좋은 접근성"],
+        "summary": "명동거리는 다양한 쇼핑 매장과 음식점들이 있어 서울의 중심에서 쇼핑과 음식을 즐기기 좋습니다.",
+        "surrounding_area": "명동거리 주변에는 남산서울타워와 남대문시장이 있어 관광과 쇼핑을 동시에 즐길 수 있습니다."
+    },
+    # 추가적으로 다른 관광지 데이터를 이어서 작성할 수 있습니다.
 ]
 
 # 질문 및 선택지 설정
@@ -54,7 +62,7 @@ questions_options = [
     },
     {
         "question": "어떤 환경에서 여행을 즐기고 싶으신가요?",
-        "options": ["도심", "자연", "자연 속 도심", "도심 속 자연", "바다", "유적지"]
+        "options": ["도심", "자연", "바다", "유적지"]
     },
     {
         "question": "여행 중 어떤 경험을 가장 중시하시나요?",
@@ -88,14 +96,19 @@ if st.button("추천받기"):
     
     # 일치 태그 개수가 높은 순으로 정렬하고 상위 두 개 선택
     matching_scores.sort(key=lambda x: x[1], reverse=True)
-    top_destinations = [destination for destination, score in matching_scores[:5]]  # 추천 5개로 수정
+    top_destinations = [destination for destination, score in matching_scores[:2]]
 
-    # 추천된 장소 목록을 표시하고, 선택된 장소에 대한 세부 정보를 보여주는 기능 추가
+    # 추천 결과 표시
     for place in top_destinations:
-        if st.button(f"자세히 보기: {place['name']}"):
-            st.subheader(place["name"])
-            st.write(place["description"])
-            st.image(place["image_url"], use_column_width=True)
-            st.write(f"**세 줄 요약**: {place['summary']}")
-            st.write(f"**주변 상권**: {place['surrounding']}")
+        st.subheader(place["name"])
+        st.write(place["description"])
+        st.image(place["image_url"], use_column_width=True)
+
+        # 관광지 요약과 주변 상권 표시 버튼
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
+            st.write("### 요약")
+            st.write(place["summary"])
+            st.write("### 주변 상권")
+            st.write(place["surrounding_area"])
+
 
