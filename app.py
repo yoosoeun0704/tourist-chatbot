@@ -32,7 +32,7 @@ destinations = [
         "tags": ["자연 탐험", "자연", "바다", "사진 명소", "힐링"]
     },
     {
-        "name": "수원화성"
+        "name": "수원화성",
         "description": "한국의 전통과 역사를 경험할 수 있는 수원의 대표 유적지입니다.",
         "image_url": "https://sl.bing.net/VIE13OkuYe",
         "tags": ["문화", "역사 탐방", "도심", "유적지", "문화 체험"]
