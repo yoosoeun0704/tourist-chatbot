@@ -408,6 +408,8 @@ questions_options = [
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR:관광지를 추천해드립니다")
 
+user_answers = [] # 사용자의 답변을 저장
+
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
@@ -461,6 +463,7 @@ for place in recommended_destinations:
     st.subheader(place["name"])
     st.write(place["description"])
     st.image(place["image_url"], use_column_width=True)
+    
     # 주변 상권과 요약 표시 버튼
     if st.button(f"{place['name']}에 대해 더 알아보기"):
         st.write("### 세 줄 요약")
