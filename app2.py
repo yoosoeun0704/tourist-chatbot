@@ -377,7 +377,7 @@ destinations = [
     {
         "name": "가평 자라섬",
         "description": "자라섬은 아름다운 자연경관과 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/sunny/?src=http%3A%2F%2Fwww.dicalove.com%2Ffiles%2Fattach%2Fimages%2F154%2F317%2F466%2F025%2Fcb9d9632331b0e0ddf528c3922d23083.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "가평 자라섬은 북한강에 위치한 작은 섬으로, 아름다운 자연과 다양한 문화 활동을 즐길 수 있는 곳입니다. 매년 자라섬재즈페스티벌과 같은 대형 문화행사가 열려 많은 사람들이 찾습니다. 섬은 자전거 도로와 산책로가 잘 마련되어 있어 관광객들이 편안하게 자연을 즐길 수 있습니다.",
         "surrounding_area": "자라섬 주변에는 많은 카페와 레스토랑이 있어 방문객들이 지역 특산물인 가평 사과나 한정식 등을 즐길 수 있습니다. 또한, 북한강을 따라 자전거를 타거나 산책할 수 있는 좋은 환경이 마련되어 있습니다."
