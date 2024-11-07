@@ -321,7 +321,7 @@ destinations = [
     {
         "name": "광명동굴",
         "description": "광명동굴은 다양한 동굴 탐험과 체험을 제공하는 관광지로, 신비로운 자연을 경험할 수 있습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTdfMjMg%2FMDAxNzEwNjYwMzk3Nzcx.01hdE4mfhDZI3qeODG6Y3-tkO3_xrH2Yr4clZcdwyYwg.Hy-BAQpvkF584P79uEk7O7zXTdtShWKkmbEbz8_zC6og.JPEG%2FDSC04113.JPG&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "광명동굴은 폐광된 광산을 활용하여 만든 관광지로, 다양한 동굴 탐험과 테마 시설들이 있습니다. 특별한 체험을 원하는 방문객들에게 흥미로운 경험을 제공합니다. 또한 동굴 내부에서 열리는 문화 공연과 전시도 인기를 끌고 있습니다.",
         "surrounding_area": "광명동굴 주변에는 광명시의 다양한 상업시설과 쇼핑몰이 있어 쇼핑과 관광을 함께 즐길 수 있습니다."
