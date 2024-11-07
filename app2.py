@@ -297,7 +297,7 @@ destinations = [
     {
         "name": "연천 한탄강",
         "description": "한탄강은 아름다운 자연경관과 함께 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MTFfNjgg%2FMDAxNjg5MDgzMDgyMTU1.H-lfBOA3r3l4FexsBanABC71P1PvJumM6OsdXzm2suAg.liQzEveNHZkpRFNEtlBu0c4mS32dmXNbXWC29XR2d6Ig.JPEG.windyuzin%2F%25C5%25A9%25B1%25E2%25BA%25AF%25C8%25AFIMG_1997.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "연천 한탄강은 맑고 깨끗한 강물과 주변의 수려한 자연경관으로 유명한 곳입니다. 특히 래프팅과 카약, 수상레저를 즐길 수 있는 장소로도 인기가 많습니다. 가족이나 친구들과 함께 자연 속에서 활동적인 시간을 보낼 수 있습니다.",
         "surrounding_area": "한탄강 주변에는 캠핑장과 바베큐 시설이 있으며, 강을 따라 산책로도 잘 조성되어 있어 자연을 만끽할 수 있는 여유로운 장소입니다."
