@@ -38,7 +38,7 @@ destinations = [
     {
         "name": "인사동길",
         "description": "전통과 현대가 어우러진 거리로, 한국의 전통 공예품과 예술작품을 구매할 수 있는 곳입니다.",
-        "image_url": "https://www.museum.go.kr/uploadfile/ecms/media/2024/09/520C4D4F-5E17-F88B-024D-1B0AB916AC5C.jpg",
+        "image_url": "https://korean.visitseoul.net/comm/getImage?srvcId=POST&parentSn=80&fileTy=POSTTHUMB&fileNo=2",
         "tags": ["문화 체험", "쇼핑", "도심", "예술 관련 교양 쌓기", "역사 탐방"],
         "summary": "전통과 현대가 어우러지는 인사동은 한국의 전통 문화와 예술을 체험할 수 있는 명소입니다. 골목마다 전통 찻집, 갤러리, 공예품 상점이 자리잡고 있어 한국 문화를 즐기기에 최적입니다. 다양한 거리 공연과 문화 행사가 열리기도 합니다.",
         "surrounding_area": "전통 공예품, 민속 기념품을 판매하는 상점들이 많고, 다양한 한국 전통 음식점이 즐비합니다. 한옥 카페와 현대적인 쇼핑몰이 혼재된 상권입니다."
@@ -46,7 +46,7 @@ destinations = [
     {
         "name": "남산서울타워",
         "description": "서울의 상징적인 전망대로, 도시 전경을 한눈에 볼 수 있는 인기 있는 관광지입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/n%EC%84%9C%EC%9A%B8%ED%83%80%EC%9B%8C",
+        "image_url": "https://50plus.or.kr/upload/im/2020/07/69e4299c-7f5a-4643-ab02-37aa0643f80d.jpg",
         "tags": ["사진 명소", "도심", "힐링", "자연", "액티비티"],
         "summary": "서울의 상징적인 전망대인 남산서울타워는 서울을 한눈에 볼 수 있는 최고의 장소입니다. 야경 명소로 유명하며, 탑을 중심으로 다양한 레스토랑과 카페들이 있습니다. 케이블카를 타고 올라가며 서울의 경치를 감상할 수 있습니다.",
         "surrounding_area": "남산 일대는 고급 레스토랑과 카페, 기념품 가게가 밀집해 있으며, 남산 도서관과 서울타워 주변의 공원도 많은 관광객들의 방문지입니다."
@@ -54,7 +54,7 @@ destinations = [
     {
         "name": "서울 국립중앙박물관",
         "description": "한국의 역사와 문화를 담고 있는 대규모 박물관으로, 다양한 전시와 교육 프로그램을 제공합니다.",
-        "image_url": "https://www.museum.go.kr/uploadfile/ecms/media/2024/09/520C4D4F-5E17-F88B-024D-1B0AB916AC5C.jpg",
+        "image_url": "https://mohenichotel.com/data/file/attractions/2746012956_ckZlfV01_e96849551c4a2c8027d510886abf084196cc78b7.jpg",
         "tags": ["문화 체험", "역사 탐방", "도심", "예술 관련 교양 쌓기", "안전하고 편안한 환경"],
         "summary": "서울 국립중앙박물관은 한국의 역사와 문화를 깊이 이해할 수 있는 박물관으로, 다양한 유물과 전시가 있습니다. 고대부터 현대까지의 다양한 예술 작품을 관람할 수 있으며, 한국의 국보와 보물들이 전시되어 있습니다. 가족 단위 방문객들에게 적합한 장소입니다.",
         "surrounding_area": "박물관 근처에는 용산 전자상가, 한남동 카페 거리, 이태원 상권 등이 위치해 있어, 다양한 음식과 쇼핑을 즐길 수 있는 명소입니다."
@@ -62,7 +62,7 @@ destinations = [
     {
         "name": "북촌한옥마을",
         "description": "전통 한옥이 잘 보존된 지역으로, 한국의 전통 건축과 문화를 체험할 수 있는 곳입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%B6%81%EC%B4%8C-%ED%95%9C%EC%98%A5-%EB%A7%88%EC%9D%84",
+        "image_url": "https://lh6.googleusercontent.com/proxy/PAHUXVl5DNJYQ8OT47BIdyZFaTmHxpaN-ffRNNzz0blNHjbPPR492GFDEQmLptUjznUdR2lrxi5a9-TXMYEGPTm6Mc9ZOceZRthGOHzssCKLtzpnNYm74cbxgJcIMpxYZdyEJ6mqpZ3YhNTGyAUjpak",
         "tags": ["문화 체험", "역사 탐방", "도심", "독특한 장소", "힐링"],
         "summary": "북촌한옥마을은 서울의 전통적인 한옥 건축을 그대로 보존한 마을로, 조선시대 상류층의 주거지였던 곳입니다. 좁은 골목길을 걸으며 전통 한옥과 예술작품들을 감상할 수 있습니다. 다양한 문화 체험과 전통 음식도 제공됩니다.",
         "surrounding_area": "북촌 한옥마을은 삼청동과 인사동, 창덕궁과 가까워 고전적인 분위기의 카페와 갤러리, 기념품 가게가 많습니다. 한복 체험과 전통 음식을 제공하는 가게들도 많습니다."
@@ -70,7 +70,7 @@ destinations = [
     {
         "name": "명동거리",
         "description": "쇼핑과 먹거리가 풍부한 서울의 대표적인 상업지구로, 젊은이들 사이에서 인기 있는 장소입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%AA%85%EB%8F%99",
+        "image_url": "https://lh3.googleusercontent.com/proxy/kk1Dx0y51tcKFj61Lwgn_PEB7muF_YoHzq49FaleZvb2SfLIi4mODkzIBigs7BPug2YVtNUcRu8",
         "tags": ["쇼핑", "도심", "새로운 음식 시도", "문화 체험", "액티비티"],
         "summary": "명동은 서울의 대표적인 쇼핑 거리로, 다양한 패션 브랜드와 화장품 매장이 밀집해 있습니다. 외국인 관광객들 사이에서 매우 인기 있는 지역으로, 거리 음식과 카페도 풍성합니다. 밤에도 활기찬 분위기를 자랑합니다.",
         "surrounding_area": "명동 주변은 화장품 가게, 의류 매장, 카페들이 즐비하며, 명동성당, 남산과의 접근성도 좋습니다. 외식과 쇼핑을 동시에 즐길 수 있는 중심지입니다."
@@ -78,7 +78,7 @@ destinations = [
     {
         "name": "남대문시장",
         "description": "다양한 상품과 먹거리를 저렴하게 구매할 수 있는 전통 시장으로, 현지인과 관광객 모두에게 사랑받는 곳입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%82%A8%EB%8C%80%EB%AC%B8%EC%9E%A5",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGNbZM1IWmH5OclBZLhjO2gbUyajDdAxvvrw&s",
         "tags": ["쇼핑", "저렴한 가격", "문화 체험", "도전적인 활동", "안전하고 편안한 환경"],
         "summary": "남대문시장은 서울의 대표적인 재래시장으로, 다양한 상품을 저렴한 가격에 구매할 수 있는 곳입니다. 의류, 잡화, 식료품 등 여러 가지 물건을 취급하며, 한국 전통 시장의 분위기를 경험할 수 있습니다. 관광객뿐만 아니라 현지인들 사이에서도 인기 있는 장소입니다.",
         "surrounding_area": "남대문시장 주변에는 회현역과 서울역이 가까워 교통이 편리합니다. 다양한 저렴한 음식점과 상점들이 많아 쇼핑과 식사를 동시에 즐길 수 있습니다."
@@ -86,7 +86,7 @@ destinations = [
     {
         "name": "광장시장",
         "description": "한국의 전통 음식과 다양한 먹거리를 즐길 수 있는 시장으로, 특히 빈대떡과 마약김밥이 유명합니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B4%91%EC%9E%A5%EC%9E%A5%EC%9C%A0",
+        "image_url": "https://i.namu.wiki/i/8NbM8k14zLteAUOILx2NjTKff56sd1JFug7peRz1XqM0J6N0g5XHUR0l7ZKhnwllvj4CbLuccmbxiGce-tpncA.webp",
         "tags": ["문화 체험", "새로운 음식 시도", "저렴한 가격", "액티비티", "안전하고 편안한 환경"],
         "summary": "광장시장은 전통적인 한국 재래시장의 모습과 먹거리를 즐길 수 있는 명소입니다. 빈대떡, 마약김밥 등 전통 음식을 맛볼 수 있으며, 다양한 길거리 음식들이 제공됩니다. 관광객뿐만 아니라 현지인들 사이에서도 인기 있는 장소입니다.",
         "surrounding_area": "광장시장은 종로와 동대문 근처로, 의류 시장과 쇼핑몰들이 밀집해 있습니다. 전통적인 시장과 현대적인 상점들이 어우러져 있는 상권입니다."
@@ -94,7 +94,7 @@ destinations = [
      {
         "name": "동대문디자인플라자",
         "description": "현대적인 디자인과 건축의 상징으로, 전시, 패션, 문화 행사 등이 열리는 복합 문화 공간입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%ED%94%84%EB%9D%BC%EC%9A%B0",
+        "image_url": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=093a621e-affa-4137-a97b-822af2412e51",
         "tags": ["문화 체험", "도심", "예술 관련 교양 쌓기", "액티비티", "독특한 장소"],
         "summary": "동대문디자인플라자는 현대적인 디자인과 문화가 융합된 복합문화공간입니다. 다양한 디자인 전시, 패션쇼, 문화 행사들이 열리며, 건축학적으로도 독특한 구조를 자랑합니다. 방문객들이 디자인과 혁신적인 아이디어를 접할 수 있는 곳입니다.",
         "surrounding_area": "동대문 일대는 의류 도매 시장과 쇼핑몰, 먹거리 골목이 밀집해 있으며, 젊은 층을 중심으로 활기찬 분위기를 자랑합니다."
@@ -102,7 +102,7 @@ destinations = [
     {
         "name": "북한산 국립공원",
         "description": "아름다운 자연 경관과 다양한 등산로를 제공하는 서울 근교의 인기 있는 국립공원입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%B6%81%ED%95%9C%EC%82%B0",
+        "image_url": "https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=56531&fileTy=MEDIA&fileNo=1",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "북한산 국립공원은 도심 근처에서 자연을 느낄 수 있는 최고의 산악 관광지입니다. 다양한 등산로와 함께 풍성한 자연 경관을 즐길 수 있으며, 사찰과 유적지 등 역사적인 장소도 많습니다.",
         "surrounding_area": "북한산 일대에는 등산로와 함께 여러 산책로가 있어 자연을 즐길 수 있는 카페와 음식점들이 위치해 있습니다. 특히 여름과 가을에는 트래킹을 즐기려는 사람들이 많이 찾는 곳입니다."
@@ -111,7 +111,7 @@ destinations = [
     {
         "name": "서울스카이",
         "description": "롯데월드타워에 위치한 전망대로, 서울의 전경을 360도 파노라마로 감상할 수 있는 곳입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%84%9C%EC%9A%B8%EC%8A%A4%EC%B9%B4%EC%9D%B4",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJWCyZbgymUhsPpz93u06H3pvgwzXhhGDtg&s",
         "tags": ["사진 명소", "도심", "힐링", "액티비티", "문화 체험"],
         "summary": "서울스카이는 롯데월드타워에 위치한 전망대입니다. 서울의 전경을 360도로 감상할 수 있는 공간으로, 고층에서 내려다보는 도시의 아름다움이 특징입니다. 특히 야경이 매우 아름답습니다.",
         "surrounding_area": "서울스카이가 위치한 롯데월드타워에는 고급 레스토랑, 쇼핑몰, 롯데월드가 있어 관광객들에게 다양한 체험을 제공합니다."
@@ -119,7 +119,7 @@ destinations = [
     {
         "name": "롯데월드",
         "description": "실내외 테마파크와 쇼핑몰이 결합된 복합 엔터테인먼트 공간으로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C",
+        "image_url": "https://static.hanatour.com/product/2023/06/01/0853q6upl9/default.png",
         "tags": ["액티비티", "가족", "도심", "문화 체험", "안전하고 편안한 환경"],
         "summary": "롯데월드는 국내 최대 규모의 실내 테마파크로, 다양한 놀이기구와 쇼핑몰, 레스토랑, 호텔 등이 한 곳에 모여 있는 복합문화공간입니다. 특히 겨울에는 스케이팅장과 연말 분위기가 돋보이며, 어린이부터 성인까지 즐길 수 있는 다양한 활동이 마련되어 있습니다.",
         "surrounding_area": "롯데월드는 잠실역과 가까워 쇼핑몰과 레스토랑, 영화관, 롯데백화점 등 다양한 상업시설을 즐길 수 있는 상권이 있습니다. 잠실 일대는 인기있는 먹거리와 카페가 많아 놀이공원 방문 후 여유로운 시간을 보내기 좋습니다."
@@ -127,7 +127,7 @@ destinations = [
     {
         "name": "홍대거리",
         "description": "젊은 예술가와 음악가들이 모여드는 활기찬 거리로, 다양한 카페와 클럽, 갤러리가 즐비합니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%ED%99%8D%EB%8C%80%EA%B1%B0%EB%A6%AC",
+        "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/6f/7b/71/photo6jpg.jpg?w=1200&h=1200&s=1",
         "tags": ["문화 체험", "음악 활동", "도심", "액티비티", "힐링"],
         "summary": "홍대거리는 서울의 대학로와 함께 젊은이들의 문화와 예술을 대표하는 거리로, 독특한 카페, 개성 있는 상점, 거리 공연 등이 끊임없이 열리는 곳입니다. 다양한 문화 행사와 공연이 자주 열리며, 홍대 근처의 클럽과 술집은 서울의 밤문화를 즐기기에 최적의 장소입니다.",
         "surrounding_area": "홍대거리는 상수동, 합정동, 연남동과 가까워 다양한 트렌디한 상권을 누릴 수 있습니다. 특히 홍대 근처의 골목길과 개성 있는 카페들이 많아 하루 종일 돌아다녀도 지루하지 않습니다."
@@ -135,7 +135,7 @@ destinations = [
     {
         "name": "익선동 한옥마을",
         "description": "전통 한옥을 개조한 카페와 상점들이 있는 지역으로, 독특한 분위기를 자랑합니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%B8%EC%82%AC%EB%8F%99-%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84",
+        "image_url": "https://tong.visitkorea.or.kr/cms/resource/22/2947522_image2_1.jpg",
         "tags": ["문화 체험", "독특한 장소", "도심", "쇼핑", "힐링"],
         "summary": "익선동 한옥마을은 전통적인 한옥 건축을 기반으로 현대적인 디자인과 감각을 더한 상점들이 모여있는 특색 있는 거리입니다. 전통과 현대가 결합된 인테리어의 카페와 음식점, 다양한 공예품을 파는 가게들이 있어 서울의 옛 모습과 현대적인 트렌드를 동시에 즐길 수 있습니다. 특히 사진 촬영을 좋아하는 이들에게 인기 있는 명소입니다.",
         "surrounding_area": "익선동 한옥마을은 종로구와 가까워 경복궁, 북촌한옥마을, 인사동 등 전통적인 명소들이 밀집해 있습니다. 또한 근처에는 다양한 카페, 레스토랑, 갤러리들이 있어 한옥의 매력을 체험하며 여유로운 시간을 보낼 수 있습니다."
@@ -143,7 +143,7 @@ destinations = [
     {
         "name": "서울로 7017",
         "description": "도심 속의 고가 보행도로 공원으로, 산책과 휴식을 즐길 수 있는 공간입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%84%9C%EC%9A%B8%EB%A1%9C-7017",
+        "image_url": "https://i.namu.wiki/i/eOVv43UHs3HFPClUXvnv8Iw5DpAN8GX3FTIQLni-ieCsTqlQYc0t0NleDTgdROwuLriKFm4DDOxw85YM5AU4zg.webp",
         "tags": ["힐링", "도심", "자연", "액티비티", "사진 명소"],
         "summary": "서울로 7017은 과거의 고가도로를 새롭게 재개발하여 만든 도심 속 공원으로, 걷기 좋은 산책로와 녹지가 어우러져 있습니다. 다양한 예술작품과 벤치, 꽃들이 곳곳에 배치되어 있어 시민들이 휴식과 산책을 즐기기에 적합한 공간입니다.",
         "surrounding_area": "서울로 7017 주변은 서울역, 명동 등 상업지구와 가까워 쇼핑과 먹거리를 함께 즐길 수 있는 장소입니다. 또한 이곳은 문화와 예술의 중심지로, 근처에 다양한 미술관과 공연장이 있어 문화생활을 누리기에 좋은 장소입니다."
@@ -151,7 +151,7 @@ destinations = [
     {
         "name": "코엑스",
         "description": "대규모 전시와 컨벤션 센터로, 쇼핑몰과 아쿠아리움, 도서관 등이 함께 있는 복합 문화 공간입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%BD%94%EC%97%91%EC%8A%A4",
+        "image_url": "https://cdn.ceorankingnews.com/news/photo/202208/76873_56832_3045.jpg",
         "tags": ["쇼핑", "문화 체험", "도심", "액티비티", "안전하고 편안한 환경"],
         "summary": "코엑스는 전시와 컨벤션이 이루어지는 장소뿐만 아니라, 쇼핑몰, 대형 서점, 영화관, 다양한 레스토랑들이 입점해 있어 서울에서 가장 바쁜 상업 및 문화 중심지 중 하나입니다. 현대적인 시설과 여러 문화적 경험을 동시에 제공합니다.",
         "surrounding_area": "코엑스 주변은 강남구의 중심에 위치하여, 삼성동, 봉은사로 이어지는 트렌디한 상업지구가 밀집해 있습니다. 쇼핑, 음식, 문화 생활이 동시에 이루어지는 복합적인 상권을 즐길 수 있습니다."
@@ -159,7 +159,7 @@ destinations = [
     {
         "name": "서울시립미술관",
         "description": "현대 미술 작품을 중심으로 다양한 전시를 개최하는 미술관으로, 예술 애호가들에게 인기 있는 장소입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EB%AF%B8%EC%88%A0%EA%B4%80",
+        "image_url": "https://i.namu.wiki/i/2_v2_jSvc94bSqV_SCh5_Gv27bK9r-SZ8_1HHxlct-c2ui7f8R03aKdFckh_7HOPp02zldtypQX2VAKMiFHDDw.webp",
         "tags": ["문화 체험", "미술 활동", "도심", "예술 관련 교양 쌓기", "안전하고 편안한 환경"],
         "summary": "서울시립미술관은 서울의 현대 미술을 대표하는 미술관으로, 다양한 예술 전시와 특별 전시가 주기적으로 개최됩니다. 미술관은 예술과 문화의 중심지로서, 많은 예술가들과 방문객들이 찾는 장소입니다.",
         "surrounding_area": "서울시립미술관 주변은 서울의 문화지구인 인사동과 가까워 전통 문화와 현대 미술을 동시에 즐길 수 있는 독특한 상권을 제공합니다."
@@ -167,7 +167,7 @@ destinations = [
     {
         "name": "서대문형무소",
         "description": "일제강점기 한국의 독립운동 역사와 관련된 박물관으로, 역사 교육의 중요한 장소입니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%84%9C%EB%8C%80%EB%AC%B8%ED%98%95%EB%AC%B4%EC%86%8C",
+        "image_url": "https://www.imedialife.co.kr/news/photo/202407/51580_57737_524.jpg",
         "tags": ["역사 탐방", "문화 체험", "안전하고 편안한 환경", "도심", "예술 관련 교양 쌓기"],
         "summary": "서대문형무소는 일제강점기 독립운동가들이 수감되었던 역사적인 장소로, 현재는 박물관과 기념관으로 운영되고 있습니다. 이곳은 한국 역사에서 중요한 위치를 차지하는 장소로, 관람을 통해 일제강점기 독립운동의 이야기를 배울 수 있습니다.",
         "surrounding_area": "서대문형무소 주변은 신촌과 가까워 다양한 상업시설과 카페, 레스토랑 등이 밀집해 있습니다. 역사적인 장소와 근처 상권을 동시에 즐길 수 있는 유니크한 장소입니다."
@@ -175,7 +175,7 @@ destinations = [
     {
         "name": "청와대",
         "description": "대한민국 대통령의 공식 관저로, 아름다운 정원과 역사적인 건축물로 구성되어 있습니다.",
-        "image_url": "https://www.istockphoto.com/kr/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%B2%AD%EC%99%80%EB%8C%80",
+        "image_url": "https://img.sbs.co.kr/newimg/news/20220509/201662572_500.jpg",
         "tags": ["역사 탐방", "문화 체험", "독특한 장소", "도심", "안전하고 편안한 환경"],
         "summary": "청와대는 대한민국 대통령이 거주하는 공식 관저로, 한국 정치의 상징적인 장소입니다. 역사적인 의미가 깊은 곳으로, 청와대 일대는 아름다운 자연경관을 자랑하며, 이곳을 방문하면 한국의 정치적, 역사적 배경을 이해할 수 있습니다.",
         "surrounding_area": "청와대 주변은 경복궁, 북촌한옥마을, 인사동 등 전통적인 문화 지역과 가까워, 역사와 문화가 얽힌 독특한 상권을 형성하고 있습니다."
@@ -183,7 +183,7 @@ destinations = [
     {
         "name": "수원화성",
         "description": "수원화성은 조선시대의 대표적인 성곽으로, 유네스코 세계문화유산으로 지정되어 있습니다.",
-        "image_url": "https://www.swcf.or.kr/inc/img/main/mobile_quick_navi_show.png",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMTNfNTgg%2FMDAxNzI4ODEwNDcyNTk3.s0GDsL_VcV7njnyQBlxlkHhecJraJINFdB_p0pNsKAkg.FRB4D4Vj2dbCOhRU9q-QGmnzt4R4w3LbI4fHCJ_ZGX8g.JPEG%2FKakaoTalk_20241011_235714368_17.jpg&type=sc960_832",
         "tags": ["역사 탐방", "문화 체험", "유네스코", "도심", "사진 명소"],
         "summary": "수원화성은 18세기 정조대왕에 의해 건설된 성곽으로, 전략적 가치와 미학적 가치를 모두 지닌 역사적 명소입니다. 성곽과 함께 성안의 궁궐, 군사시설을 돌아볼 수 있습니다. 특히 야경이 아름다워 많은 관광객들이 찾습니다.",
         "surrounding_area": "수원화성 주변에는 전통적인 한국 음식을 즐길 수 있는 맛집들이 많이 위치해 있으며, 수원역과의 접근성도 좋아 쇼핑과 음식 문화도 함께 즐길 수 있는 상권입니다."
@@ -192,7 +192,7 @@ destinations = [
     {
         "name": "구리 동구릉",
         "description": "구리 동구릉은 조선 왕릉 중 하나로, 아름다운 자연경관과 함께 역사적 의미를 지닌 장소입니다.",
-        "image_url": "https://www.guri.go.kr/culture/selectTourCntntsWebView.do?tourNo=4&pageUnit=1000&pageIndex=2&searchCnd=all&key=1194&ctgry=7&sortTy=RECOMEND",
+        "image_url": "https://www.heritage.go.kr/unisearch/images/history_site/thumb/2021070816110901.jpg",
         "tags": ["역사 탐방", "문화 체험", "자연", "사진 명소", "안전하고 편안한 환경"],
         "summary": "구리 동구릉은 조선왕조의 역사를 간직한 왕릉으로, 특히 정종, 태종의 묘소가 위치해 있습니다. 고요한 자연 속에서 왕의 위엄과 고풍스러운 분위기를 느낄 수 있는 곳입니다. 산책과 역사 체험에 좋은 장소입니다.",
         "surrounding_area": "동구릉 인근에는 자연경관이 뛰어난 산책로와 카페들이 위치해 있습니다. 구리시내와의 접근성도 좋아 관광객들에게 편리합니다."
@@ -201,7 +201,7 @@ destinations = [
     {
         "name": "파주 임진각",
         "description": "임진각은 남북 분단의 상징적인 장소로, 평화와 통일을 기원하는 공간입니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?menuCode=36&cntntsSn=573",
+        "image_url": "https://tour.paju.go.kr/upload/tour/open/culture/gallery/99/191.JPG",
         "tags": ["역사 탐방", "문화 체험", "자연", "사진 명소", "안전하고 편안한 환경"],
         "summary": "임진각은 한국전쟁 당시의 상처를 치유하려는 의미를 담고 있는 평화의 기념관과 공원이 있습니다. 북녘을 향한 전망대와 평화의 불꽃이 있는 기념비 등 다양한 시설을 갖추고 있습니다. 가족 단위 방문객들에게 적합한 장소입니다.",
         "surrounding_area": "임진각 근처에는 휴게소와 전통적인 한국 음식점들이 있으며, 가까운 파주 출판도시와 헤이리 예술마을도 많은 관광객들이 찾는 명소입니다."
@@ -209,7 +209,7 @@ destinations = [
     {
         "name": "안성 남사당놀이",
         "description": "남사당놀이는 전통적인 한국의 민속 공연으로, 다양한 예술적 요소가 결합된 공연입니다.",
-        "image_url": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=b530def8-d159-4853-8434-c98212e985e6",
+        "image_url": "https://cdn.panews.co.kr/news/photo/201304/2231_2042_5454.jpg",
         "tags": ["문화 체험", "예술 관련 교양 쌓기", "전통 공연", "액티비티", "가족"],
         "summary": "남사당놀이에서는 전통적인 한국의 마당극, 탈춤, 줄타기 등을 감상할 수 있습니다. 이 공연은 유네스코 인류무형문화유산으로 지정된 전통 공연예술입니다. 다양한 전통 문화 체험 프로그램도 함께 제공됩니다.",
       "surrounding_area": "안성의 전통적인 시장과 음식점들이 많은데, 특히 농산물을 이용한 지역 특산물과 함께 전통 음식을 즐길 수 있습니다."
@@ -217,7 +217,7 @@ destinations = [
     {
         "name": "광주 남한산성",
         "description": "남한산성은 조선시대의 방어 시설로, 역사적 가치가 높은 유적지입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://www.gjcity.go.kr/tour/img/sub01/img_namhan1.png",
         "tags": ["역사 탐방", "문화 체험", "자연", "사진 명소", "안전하고 편안한 환경"],
         "summary": "남한산성은 서울 근교에 위치한 고대 산성으로, 조선시대 왕들이 피난처로 사용한 곳입니다. 탁 트인 전망과 함께 산책로와 다양한 문화유적을 경험할 수 있습니다. 역사적인 의미를 지닌 장소입니다.",
         "surrounding_area": "남한산성 일대에는 자연을 즐길 수 있는 카페와 맛집들이 있으며, 캠핑과 등산을 즐길 수 있는 공간도 제공됩니다."
@@ -225,7 +225,7 @@ destinations = [
     {
         "name": "포천 국립수목원",
         "description": "국립수목원은 다양한 식물과 자연을 체험할 수 있는 공간으로, 힐링을 제공합니다.",
-        "image_url": "https://www.kctg.or.kr/tour/touristSiteView.do?tourist_cd=TOURIST_ID00010693",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_334dkQB-q3xkFsFT-ZpXGGLcFs9jU-TFTg&s",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "국립수목원은 다양한 식물들을 보존하고 연구하는 시설로, 울창한 숲속에서 자연을 만끽할 수 있습니다. 특히 식물과 함께 걷는 산책로와 다양한 자연 체험 프로그램이 인기입니다.",
         "surrounding_area": "포천의 자연 환경에 맞춘 카페와 음식점들이 있으며, 가벼운 하이킹과 자연을 즐기기 좋은 상권이 형성되어 있습니다."
@@ -233,7 +233,7 @@ destinations = [
     {
         "name": "포천 산정호수",
         "description": "산정호수는 아름다운 경관과 함께 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?q_gubunCode=1004&menuCode=1&cntntsSn=2",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJ7pG73wtZYjX0Ag-_nePdhC-aHmF8EWf6A&s",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "산정호수는 깨끗한 호수와 주변 자연경관이 뛰어난 관광지로, 여름철에는 보트 타기와 같은 수상 스포츠를 즐길 수 있습니다. 겨울철에는 호수 주변을 산책하며 자연의 고요함을 즐길 수 있습니다.",
         "surrounding_area": "호수 주변에는 레스토랑과 카페, 숙소들이 밀집해 있으며, 자연 친화적인 분위기에서 휴식과 식사를 즐길 수 있습니다."
@@ -241,7 +241,7 @@ destinations = [
     {
         "name": "여주 영릉",
         "description": "영릉은 조선 왕릉 중 하나로, 역사적 가치가 높은 유적지입니다.",
-        "image_url": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=22,00210000,31&pageNo=1_1_1_0",
+        "image_url": "https://www.sunnews.co.kr/news/photo/202004/67963_45185_5621.jpg",
         "tags": ["역사 탐방", "문화 체험", "안전하고 편안한 환경", "사진 명소", "유네스코"],
         "summary": "영릉은 조선의 22대 왕인 정조의 묘소로, 매우 고풍스럽고 정교한 구조를 자랑합니다. 묘역 주변에는 자연경관이 아름다워 산책하기 좋은 곳입니다.",
         "surrounding_area": "여주 일대에는 전통적인 한국 음식점들이 많으며, 지역 특산물인 여주 쌀과 관련된 먹거리를 즐길 수 있습니다."
@@ -249,7 +249,7 @@ destinations = [
     {
         "name": "양평 두물머리",
         "description": "두물머리는 아름다운 자연경관과 함께 힐링을 제공하는 장소입니다.",
-        "image_url": "https://www.tripadvisor.co.kr/AttractionsNear-g2024868-d10338816-Namhansanseong_Fortress-Gwangju_Gyeonggi_do.html",
+        "image_url": "https://i.namu.wiki/i/9et9vbBvaXe7z5iIWvWn_znGyE7ugeJzWE9j3h_SnkJXGx1SvPusGsBvdUZVQLsj1_0DH2-skzoTDAbDISp-rg.webp",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "두물머리는 한강과 북한강이 만나는 아름다운 풍경으로 유명한 관광지입니다. 특히 일출과 일몰의 경치가 매우 아름다워 사진 촬영 명소로도 많이 알려져 있습니다.",
         "surrounding_area": "양평의 자연을 즐기기 좋은 카페와 레스토랑들이 많으며, 주변에는 다양한 농산물과 특산물을 판매하는 상점들이 있습니다."
