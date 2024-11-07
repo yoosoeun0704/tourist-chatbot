@@ -12,12 +12,6 @@ destinations = [
         "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"]
     },
     {
-        "name": "제주도 성산 일출봉",
-        "description": "아름다운 일출과 함께 자연을 만끽할 수 있는 제주의 인기 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MDhfMjk2%2FMDAxNjkxNDYxNDQxNTY4.6Ev421h1hStxTq98GjJ3qKSKLJ6uXGvaJbj4r2odk0kg.rCANTQkA8QVDm9IpRBgiHKfdKZ-FGs-jd4cgKElBoqgg.PNG.raimongmall%2F%25BC%25BA%25BB%25EA%25C0%25CF%25C3%25E2%25BA%25C0.png&type=sc960_832",
-        "tags": ["자연 탐험", "자연", "바다", "사진 명소", "힐링"]
-    },
-    {
         "name": "수원화성",
         "description": "한국의 전통과 역사를 경험할 수 있는 수원의 대표 유적지입니다.",
         "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MjNfMTYw%2FMDAxNzE2MzkwNDkzNTkw.hGbTTrdhPUfzRFbRWP43dpPpRTLXfWC2QbadfEv-ewcg.-J48L9rp25B-ek0ZpX-fiVUQIpyctcjCV34yJC3RRDkg.JPEG%2F20240426-_C6A8780.jpg&type=sc960_832",
@@ -60,10 +54,256 @@ destinations = [
         "tags": ["액티비티", "자연", "사진 명소", "도전적인 활동", "독특한 장소"]
     },
     {
-        "name": "981 파크 제주",
-        "description": "카트 레이싱, 서바이벌 등 재밌는 여러 액티비티를 즐길 수 있는 제주의 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210527_297%2F16220986701968f1N7_JPEG%2F1.jpg",
-        "tags": ["액티비티", "도심", "사진 명소", "도전적인 활동", "독특한 활동"]
+        "name": "인사동길",
+        "description": " 어우러진 거리로, 한국의 전통 공예품과 예술작품을 구매할 수 있는 곳입니다.",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "image_url": "",
+        "tags": ["", "", "", "", ""]
     }
 ]
 
