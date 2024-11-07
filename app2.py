@@ -305,7 +305,7 @@ destinations = [
     {
         "name": "과천 서울랜드",
         "description": "서울랜드는 다양한 놀이기구와 테마가 있는 대형 테마파크로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MTNfMjQz%2FMDAxNjg2NjU2NTY2MDk5.9hPWbxxWFI460J2-swcOb1hWEIxk97dVlV-TwqDyksAg.po3SZKf_h-1PIqEy_QizrB6CPZQj-4gp9apizsse-CYg.JPEG.k30935%2F20230611%25A3%25DF183853.jpg&type=sc960_832",
         "tags": ["액티비티", "가족", "문화 체험", "사진 명소", "안전하고 편안한 환경"],
         "summary": "서울랜드는 서울 근교에 위치한 인기 놀이공원으로, 다양한 테마와 놀이기구가 있어 온 가족이 함께 즐길 수 있습니다. 계절마다 다채로운 축제와 행사가 열리며, 특히 어린이들에게 인기가 많습니다.",
         "surrounding_area": "서울랜드 주변에는 과천과 서울을 잇는 교통망이 발달되어 있으며, 서울대공원과 가까워 함께 방문할 수 있는 이점이 있습니다."
