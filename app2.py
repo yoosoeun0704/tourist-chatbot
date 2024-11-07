@@ -329,7 +329,7 @@ destinations = [
     {
         "name": "화성 제부도",
         "description": "제부도는 아름다운 해변과 자연경관을 제공하는 관광지로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMzExMDZfMTgz%2FMDAxNjk5MjM0NDUwODYy.6sYu-1BRmOjfWwpTNAE2mxNQWrMSrl4osVtLoztYGhUg.NZXIaBxuvPoPrhOpFSToEl65iiZAfkwLRteUnc7wcT0g.PNG%2FIksbJj1bBxB2QAUu8BPCpUFEn5Mw.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "제부도는 화성시의 작은 섬으로, 아름다운 바다 풍경과 조용한 분위기를 즐길 수 있는 곳입니다. 특히, 제부도의 모래사장에서 자전거를 타고 주변을 돌아보거나, 갯벌 체험을 할 수 있습니다.",
         "surrounding_area": "제부도 근처에는 해산물을 즐길 수 있는 식당들이 있으며, 섬 주변을 돌아볼 수 있는 카페와 상점들도 존재합니다."
