@@ -27,13 +27,13 @@ destinations = [
         "name": "서울숲",
         "description": "푸르른 한강과 함께 자연을 즐길 수 있는 서울의 인기있는 힐링 명소입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200728_296%2F1595899415265D5A3d_JPEG%2F%25B0%25A1%25C1%25B7%25B8%25B6%25B4%25E71.jpg",
-        "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"]
+        "tags": ["자연 탐험", "자연", "사진 명소", "힐링", "좋은 접근성"]
     },
     {
         "name": "남산서울타워",
         "description": "서울 도심 속에서 밝게 빛나는 야경 명소입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
-        "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"]
+        "tags": ["자연 탐험", "자연", "사진 명소", "힐링", "좋은 접근성"]
     },
     {
         "name": "더현대 서울",
@@ -56,8 +56,7 @@ destinations = [
     {
         "name": "에버랜드",
         "description": "가족, 연인, 친구와 함께 여러 놀이기구와 먹거리를 즐길 수 있는 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2FIMG_2660.jpg&type=sc960_832",
-        "tags": ["액티비티", "자연 속 도심", "사진 명소", "도전적인 활동", "독특한 장소"]
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2연", "사진 명소", "도전적인 활동", "독특한 장소"]
     },
     {
         "name": "981 파크 제주",
@@ -75,7 +74,7 @@ questions_options = [
     },
     {
         "question": "어떤 환경에서 여행을 즐기고 싶으신가요?",
-        "options": ["도심", "자연", "자연 속 도심", "도심 속 자연", "바다", "유적지"]
+        "options": ["도심", "자연", "바다", "유적지"]
     },
     {
         "question": "여행 중 어떤 경험을 가장 중시하시나요?",
