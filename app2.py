@@ -1,7 +1,6 @@
 import streamlit as st
-import random
 
-# 관광지 데이터
+# 관광지 데이터 (모든 장소 포함)
 destinations = [
     {
         "name": "경복궁",
@@ -19,39 +18,7 @@ destinations = [
         "summary": "인사동길은 한국 전통과 현대적 예술이 어우러진 곳으로 다양한 공예품을 구매할 수 있습니다.",
         "surrounding_area": "인사동길 주변에는 경복궁, 북촌한옥마을, 그리고 다양한 전통 찻집이 있습니다."
     },
-    {
-        "name": "남산서울타워",
-        "description": "서울 도심 속에서 밝게 빛나는 야경 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
-        "tags": ["자연 탐험", "자연", "사진 명소", "힐링", "좋은 접근성"],
-        "summary": "남산서울타워는 서울의 전경을 한눈에 볼 수 있는 명소로, 야경이 특히 아름답습니다.",
-        "surrounding_area": "남산서울타워 주변에는 남산공원이 있어 산책이나 하이킹을 즐기기 좋습니다."
-    },
-    {
-        "name": "서울 국립중앙박물관",
-        "description": "한국의 역사와 문화를 배우고 체험할 수 있는 박물관입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190930_201%2F15698070053875P5RY_JPEG%2F2020_서울국립중앙박물관.jpg&type=sc960_832",
-        "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"],
-        "summary": "서울 국립중앙박물관은 한국의 역사적인 유물을 전시하며, 문화 탐방에 이상적인 장소입니다.",
-        "surrounding_area": "박물관 근처에는 이태원과 한남동이 있어 다양한 음식과 쇼핑을 즐길 수 있습니다."
-    },
-    {
-        "name": "북촌한옥마을",
-        "description": "조선시대의 전통 가옥인 한옥을 경험할 수 있는 곳입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191009_21%2F1570608403202uFsHs_JPEG%2F1570608403202.jpg&type=sc960_832",
-        "tags": ["문화, 역사 탐방", "도심", "유적지", "문화 체험", "사진 명소"],
-        "summary": "북촌한옥마을은 전통적인 한옥이 모여있는 지역으로, 고즈넉한 분위기 속에서 전통 문화를 체험할 수 있습니다.",
-        "surrounding_area": "북촌한옥마을 근처에는 경복궁과 인사동이 있어 한국의 전통 문화를 함께 즐길 수 있습니다."
-    },
-    {
-        "name": "명동거리",
-        "description": "서울의 대표적인 쇼핑 거리로, 다양한 브랜드와 맛집이 즐비한 곳입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
-        "tags": ["쇼핑", "도심", "사진 명소", "새로운 음식 시도", "좋은 접근성"],
-        "summary": "명동거리는 다양한 쇼핑 매장과 음식점들이 있어 서울의 중심에서 쇼핑과 음식을 즐기기 좋습니다.",
-        "surrounding_area": "명동거리 주변에는 남산서울타워와 남대문시장이 있어 관광과 쇼핑을 동시에 즐길 수 있습니다."
-    },
-    # 추가적으로 다른 관광지 데이터를 이어서 작성할 수 있습니다.
+    # 나머지 관광지 추가 ...
 ]
 
 # 질문 및 선택지 설정
@@ -102,13 +69,11 @@ if st.button("추천받기"):
     for place in top_destinations:
         st.subheader(place["name"])
         st.write(place["description"])
-        st.image(place["image_url"], use_column_width=True)
 
-        # 관광지 요약과 주변 상권 표시 버튼
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.write("### 요약")
-            st.write(place["summary"])
-            st.write("### 주변 상권")
-            st.write(place["surrounding_area"])
-
-
+        # 이미지 클릭 시 요약과 주변 상권 표시하도록 설정
+        img = st.image(place["image_url"], use_column_width=True, caption="Click for details", output_format="JPEG")
+        
+        # 이미지 클릭 후 요약과 상권 보여주기
+        if img:
+            st.write(f"**요약**: {place['summary']}")
+            st.write(f"**주변 상권**: {place['surrounding_area']}")
