@@ -289,7 +289,7 @@ destinations = [
     {
         "name": "용인 한국민속촌",
         "description": "한국민속촌은 전통 한국 문화를 체험할 수 있는 공간으로, 다양한 전통 공연과 체험 프로그램이 있습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200525_120%2F1590394419044DhFmg_JPEG%2FSp-rpylEcqrQII9AKbA7Bamy.jpg",
         "tags": ["문화 체험", "역사 탐방", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "한국민속촌은 전통적인 한국의 건축 양식과 생활 문화를 재현한 테마파크입니다. 한복을 입은 사람들과 전통 놀이, 음식 체험 등을 통해 한국의 역사와 문화를 배울 수 있는 장소입니다. 어린이들과 가족 단위 관광객에게 매우 인기 있습니다.",
         "surrounding_area": "한국민속촌 주변에는 전통적인 맛집들이 많고, 지역 특산물인 한과나 전통 음식을 맛볼 수 있는 곳도 많이 있습니다."
