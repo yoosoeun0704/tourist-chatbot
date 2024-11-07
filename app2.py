@@ -18,7 +18,7 @@ destinations = [
         "summary": "인사동길은 한국 전통과 현대적 예술이 어우러진 곳으로 다양한 공예품을 구매할 수 있습니다.",
         "surrounding_area": "인사동길 주변에는 경복궁, 북촌한옥마을, 그리고 다양한 전통 찻집이 있습니다."
     },
-    # 나머지 관광지 추가 ...
+    # 추가 관광지 데이터...
 ]
 
 # 질문 및 선택지 설정
@@ -65,16 +65,17 @@ if st.button("추천받기"):
     matching_scores.sort(key=lambda x: x[1], reverse=True)
     top_destinations = [destination for destination, score in matching_scores[:2]]
 
-    # 추천 결과 표시
+    # 추천된 관광지 리스트
     for place in top_destinations:
-        st.subheader(place["name"])
-        st.write(place["description"])
+        # 관광지 이미지와 이름을 보여줍니다.
+        if st.button(f"{place['name']} 이미지 보기"):
+            st.image(place["image_url"], caption=place["name"], use_column_width=True)
 
-        # 이미지 보여주기
-        st.image(place["image_url"], use_column_width=True)
-
-        # "더 알아보기" 버튼 추가하여 클릭 시 요약과 상권 표시
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
+        # 해당 장소의 이미지 클릭 시, 더 알아보기 버튼 생성
+        selected_place = st.radio("어떤 관광지에 대해 더 알아보시겠어요?", [place["name"]])
+        
+        if selected_place == place["name"]:
             st.write(f"**요약**: {place['summary']}")
             st.write(f"**주변 상권**: {place['surrounding_area']}")
+
 
