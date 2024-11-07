@@ -353,7 +353,7 @@ destinations = [
     {
         "name": "안성팜랜드",
         "description": "안성팜랜드는 농업과 자연을 체험할 수 있는 공간으로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMTFfMjgx%2FMDAxNzI4NjA2OTkxMjQ4.vJfbYsc0tdBzXZKaVUblkasPjcs4Z_2TB6MAuj9tTFog.mSrIiZEqm40TpdV00fC4kAMkYUQEzOaLrKiaHpnQIKIg.JPEG%2F%25BE%25C8%25BC%25BA%25C6%25CA%25B7%25A3%25B5%25E5%25C7%25CE%25C5%25A9%25B9%25C4%25B8%25AE_19.jpg&type=sc960_832",
         "tags": ["액티비티", "가족", "문화 체험", "사진 명소", "안전하고 편안한 환경"],
         "summary": "안성팜랜드는 농촌 체험과 함께 자연을 즐길 수 있는 곳입니다. 농작물을 수확하거나 동물들과 교감할 수 있는 프로그램들이 제공되어 어린이들과 가족 단위 방문객들에게 특히 인기가 많습니다.",
         "surrounding_area": "팜랜드 주변에는 농산물을 이용한 다양한 먹거리와 지역 특산물이 많이 있으며, 산책과 야외 활동을 즐기기에 좋은 장소입니다."
