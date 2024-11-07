@@ -51,7 +51,7 @@ for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
     user_answers.append(answer)
 
-# 추천 버튼
+# 추천받기 버튼
 if st.button("추천받기"):
     # 각 관광지의 일치하는 태그 개수를 저장
     matching_scores = []
@@ -72,10 +72,23 @@ if st.button("추천받기"):
         st.write(place["description"])
         st.image(place["image_url"], caption=place["name"], use_column_width=True)
 
-        # "더 알아보기" 버튼을 생성하여 해당 장소의 세 줄 요약과 주변 상권 정보 출력
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.write(f"### 요약: {place['summary']}")
-            st.write(f"### 주변 상권: {place['surrounding_area']}")
+        # 버튼 클릭시 해당 관광지의 상세 정보를 세션 상태에 저장
+        button_key = f"{place['name']}_details_button"
+        if st.button(f"{place['name']}에 대해 더 알아보기", key=button_key):
+            # 클릭된 관광지의 세부 정보 저장
+            st.session_state[place["name"]] = {
+                "summary": place["summary"],
+                "surrounding_area": place["surrounding_area"]
+            }
+
+# "더 알아보기" 버튼 클릭 후 세부 정보를 출력하는 부분
+if '경복궁' in st.session_state:
+    st.write(f"### {st.session_state['경복궁']['summary']}")
+    st.write(f"### 주변 상권: {st.session_state['경복궁']['surrounding_area']}")
+
+if '인사동길' in st.session_state:
+    st.write(f"### {st.session_state['인사동길']['summary']}")
+    st.write(f"### 주변 상권: {st.session_state['인사동길']['surrounding_area']}")
 
 
 
