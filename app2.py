@@ -345,7 +345,7 @@ destinations = [
     {
         "name": "포천아트밸리",
         "description": "포천아트밸리는 예술과 자연이 어우러진 공간으로, 다양한 문화 체험이 가능합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMzBfMTk5%2FMDAxNzAzOTI4NzIwMDQ5.W3fzYG94ieXm_S-P6UyJS-YC1TeSWDqpZIP37QrRrzUg.lew0rGFAKpayjvshZ4MMtLidtMuHPFt6NuEC6vz5Voog.JPEG.tototorlck%2F20230520%25A3%25DF120832.jpg&type=sc960_832",
         "tags": ["문화 체험", "예술 관련 교양 쌓기", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "포천아트밸리는 예술 작품과 자연이 어우러진 공간으로, 조각 공원, 전시관, 야외 공연장 등이 잘 조성되어 있습니다. 다양한 예술 작품을 감상할 수 있으며, 자연 속에서 여유로운 시간을 보낼 수 있습니다.",
         "surrounding_area": "아트밸리 주변에는 지역 농산물을 판매하는 마켓과 지역 특산물 가게들이 있으며, 포천의 자연을 즐길 수 있는 카페들이 많습니다."
