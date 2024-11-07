@@ -56,7 +56,8 @@ destinations = [
     {
         "name": "에버랜드",
         "description": "가족, 연인, 친구와 함께 여러 놀이기구와 먹거리를 즐길 수 있는 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2연", "사진 명소", "도전적인 활동", "독특한 장소"]
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2
+        "tags": ["액티비티", "자연", "사진 명소", "도전적인 활동", "독특한 장소"]
     },
     {
         "name": "981 파크 제주",
