@@ -67,15 +67,15 @@ if st.button("추천받기"):
 
     # 추천된 관광지 리스트
     for place in top_destinations:
-        # 관광지 이미지와 이름을 보여줍니다.
-        if st.button(f"{place['name']} 이미지 보기"):
-            st.image(place["image_url"], caption=place["name"], use_column_width=True)
+        # 관광지 이미지와 설명을 보여줍니다.
+        st.subheader(place["name"])
+        st.write(place["description"])
+        st.image(place["image_url"], caption=place["name"], use_column_width=True)
 
-        # 해당 장소의 이미지 클릭 시, 더 알아보기 버튼 생성
-        selected_place = st.radio("어떤 관광지에 대해 더 알아보시겠어요?", [place["name"]])
-        
-        if selected_place == place["name"]:
-            st.write(f"**요약**: {place['summary']}")
-            st.write(f"**주변 상권**: {place['surrounding_area']}")
+        # "더 알아보기" 버튼을 생성하여 해당 장소의 세 줄 요약과 주변 상권 정보 출력
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
+            st.write(f"### 요약: {place['summary']}")
+            st.write(f"### 주변 상권: {place['surrounding_area']}")
+
 
 
