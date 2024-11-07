@@ -32,7 +32,7 @@ destinations = [
     {
         "name": "남산서울타워",
         "description": "서울 도심 속에서 밝게 빛나는 야경 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200728_296%2F1595899415265D5A3d_JPEG%2F%25B0%25A1%25C1%25B7%25B8%25B6%25B4%25E71.jpg",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
         "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"]
     },
     {
