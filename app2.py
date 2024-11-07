@@ -75,7 +75,6 @@ destinations = [
         "summary": "인사동길은 전통과 현대가 어우러진 거리로, 다양한 공예품과 예술작품을 구매할 수 있습니다. 한국의 전통 문화를 체험할 수 있는 좋은 장소입니다.",
         "surrounding_area": "경복궁, 북촌한옥마을 등 다양한 문화 명소가 인근에 있습니다."
     },
-    # 추가 관광지 데이터는 생략
 ]
 
 # 질문 및 선택지 설정
@@ -101,12 +100,17 @@ questions_options = [
 # Streamlit 앱 레이아웃 설정
 st.title("여행 스타일 기반 관광지 추천 챗봇")
 
-user_answers = []  # 사용자의 답변을 저장
+# 세션 상태 초기화
+if 'user_answers' not in st.session_state:
+    st.session_state.user_answers = []
+if 'recommended_places' not in st.session_state:
+    st.session_state.recommended_places = []
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
-    user_answers.append(answer)
+    if len(st.session_state.user_answers) < len(questions_options):
+        st.session_state.user_answers.append(answer)
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -115,25 +119,26 @@ if st.button("추천받기"):
     
     for destination in destinations:
         # 일치하는 태그 수 계산
-        score = sum(tag in destination["tags"] for tag in user_answers)
+        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
         matching_scores.append((destination, score))
     
     # 일치 태그 개수가 높은 순으로 정렬하고 상위 두 개 선택
     matching_scores.sort(key=lambda x: x[1], reverse=True)
-    top_destinations = [destination for destination, score in matching_scores[:2]]
+    st.session_state.recommended_places = [destination for destination, score in matching_scores[:2]]
 
-    # 추천 결과 표시
-    for place in top_destinations:
-        st.subheader(place["name"])
-        st.write(place["description"])
-        st.image(place["image_url"], use_column_width=True)
-        
-        # 관광지 요약과 주변 상권 표시 버튼
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.write("### 요약")
-            st.write(place["summary"])
-            st.write("### 주변 상권")
-            st.write(place["surrounding_area"])
+# 추천 결과 표시
+for place in st.session_state.recommended_places:
+    st.subheader(place["name"])
+    st.write(place["description"])
+    st.image(place["image_url"], use_column_width=True)
+    
+    # 관광지 요약과 주변 상권 표시 버튼
+    if st.button(f"{place['name']}에 대해 더 알아보기"):
+        st.write("### 요약")
+        st.write(place["summary"])
+        st.write("### 주변 상권")
+        st.write(place["surrounding_area"])
+
 
 
 
