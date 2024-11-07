@@ -70,10 +70,10 @@ if st.button("추천받기"):
         st.subheader(place["name"])
         st.write(place["description"])
 
-        # 이미지 클릭 시 요약과 주변 상권 표시하도록 설정
+        # 이미지 클릭 시 요약과 상권 보여주는 버튼 추가
         img = st.image(place["image_url"], use_column_width=True, caption="Click for details", output_format="JPEG")
         
-        # 이미지 클릭 후 요약과 상권 보여주기
-        if img:
+        # 클릭한 이미지를 나타내는 버튼을 추가하여 정보 출력
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
             st.write(f"**요약**: {place['summary']}")
             st.write(f"**주변 상권**: {place['surrounding_area']}")
