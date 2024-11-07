@@ -116,3 +116,9 @@ if st.button("추천받기"):
         st.subheader(place["name"])
         st.write(place["description"])
         st.image(place["image_url"], use_column_width=True)
+        # 관광지 요약과 주변 상권 표시
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
+            st.write("### 요약")
+            st.write(place["summary"])
+            st.write("### 주변 상권")
+            st.write(place["surrounding_area"])
