@@ -25,12 +25,24 @@ destinations = [
     }
 ]
 
-# 질문
-questions = [
-    "어떤 종류의 활동을 즐기시나요? (문화, 역사 탐방 / 자연 탐험/쇼핑/액티비티/예술)",
-    "어떤 환경에서 여행을 즐기고 싶으신가요? (도심/자연/바다/유적지)",
-    "여행 중 어떤 경험을 가장 중시하시나요? (사진 명소/문화 체험/힐링/도전적인 활동/새로운 음식 시도)",
-    "여행 중 어떤 것을 가장 중요하게 생각하시나요? (좋은 접근성 / 독특한 장소/ 저렴한 가격/ 안전하고 편안한 환경)"
+# 질문 및 선택지 설정
+questions_options = [
+    {
+        "question": "어떤 종류의 활동을 즐기시나요?",
+        "options": ["문화", "역사 탐방", "자연 탐험", "쇼핑", "액티비티", "예술"]
+    },
+    {
+        "question": "어떤 환경에서 여행을 즐기고 싶으신가요?",
+        "options": ["도심", "자연", "바다", "유적지"]
+    },
+    {
+        "question": "여행 중 어떤 경험을 가장 중시하시나요?",
+        "options": ["사진 명소", "문화 체험", "힐링", "도전적인 활동", "새로운 음식 시도"]
+    },
+    {
+        "question": "여행 중 어떤 것을 가장 중요하게 생각하시나요?",
+        "options": ["좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
+    }
 ]
 
 # Streamlit 앱 레이아웃 설정
@@ -39,8 +51,8 @@ st.title("여행 스타일 기반 관광지 추천 챗봇")
 user_answers = []  # 사용자의 답변을 저장
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
-for i, question in enumerate(questions):
-    answer = st.selectbox(question, options=destinations[i]["tags"], key=f"question_{i}")
+for i, q in enumerate(questions_options):
+    answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
     user_answers.append(answer)
 
 # 추천 버튼
@@ -48,7 +60,7 @@ if st.button("추천받기"):
     # 답변을 바탕으로 관광지 추천
     matched_destinations = [
         destination for destination in destinations
-        if all(answer in destination["tags"] for answer in user_answers)
+        if any(answer in destination["tags"] for answer in user_answers)
     ]
     
     # 일치하는 관광지가 부족할 경우 무작위로 두 개 선택
