@@ -24,33 +24,26 @@ destinations = [
         "description": "푸르른 한강과 함께 자연을 즐길 수 있는 서울의 인기있는 힐링 명소입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200728_296%2F1595899415265D5A3d_JPEG%2F%25B0%25A1%25C1%25B7%25B8%25B6%25B4%25E71.jpg",
         "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"],
-        "summary": "서울숲은 도심 속에서 자연을 즐길 수 있는 공간으로, 다양한 식물과 동물들을 관찰할 수 있습니다. 한강과 인접해 있어 서울의 다양한 자연을 한 눈에 볼 수 있는 장점이 있습니다. 도심에 위치해 있어 접근성이 뛰어나며, 휴식과 힐링을 제공하는 장소입니다.",
-        "surrounding": "압구정: 고급스러운 쇼핑과 레스토랑이 밀집한 지역. 강남역: 젊은층이 많이 찾는 쇼핑, 카페, 음식점들이 즐비해 있습니다. 한강: 자전거 도로와 산책로가 잘 마련되어 있어 여유로운 시간을 보낼 수 있습니다."
+        "summary": "서울숲은 서울시내에서 자연을 만끽할 수 있는 도심 속 공원입니다. 자전거와 산책로, 다양한 야생 동물을 만날 수 있는 동물원도 있어 가족 단위 방문객에게 인기가 많습니다. 도심 속 자연을 찾는 여행객에게 안성맞춤인 명소입니다.",
+        "surrounding": "압구정: 트렌디한 카페와 쇼핑몰이 밀집한 지역. 성수동: 인디 감성의 가게들과 현대적인 분위기의 레스토랑들이 많습니다. 한강: 자전거와 산책을 즐길 수 있는 넓은 공간."
     },
     {
         "name": "남산서울타워",
         "description": "서울 도심 속에서 밝게 빛나는 야경 명소입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190711_62%2F1562823704121InE2t_JPEG%2Fusfc9L8iEAQfjJK8oKoBwa4d.jpg",
         "tags": ["자연 탐험", "도심 속 자연", "사진 명소", "힐링", "좋은 접근성"],
-        "summary": "남산서울타워는 서울의 랜드마크 중 하나로, 서울의 아름다운 전경을 감상할 수 있는 장소입니다. 야경이 특히 유명하며, 전망대에서 서울 시내를 한 눈에 내려다볼 수 있습니다. 케이블카나 도보로 쉽게 접근할 수 있어 많은 관광객들이 찾는 명소입니다.",
-        "surrounding": "명동: 쇼핑과 음식을 즐길 수 있는 인기 지역. 서울역: 서울의 교통 중심지로, 다양한 쇼핑몰과 먹거리가 밀집해 있습니다. 남대문시장: 전통적인 재래시장으로, 다양한 물건을 구입할 수 있는 곳입니다."
+        "summary": "남산서울타워는 서울의 전경을 한눈에 볼 수 있는 명소입니다. 낮에는 서울 시내의 아름다운 풍경을, 밤에는 야경을 즐길 수 있어 연인들에게도 인기 있는 장소입니다. 타워에서 내려다보는 서울은 그 자체로 멋진 사진 명소입니다.",
+        "surrounding": "남산: 서울의 중심에 위치한 산으로, 산책로와 자연을 즐길 수 있는 공간입니다. 이태원: 다양한 문화가 어우러진 지역으로, 다국적 음식점과 상점들이 많습니다."
     },
     {
         "name": "더현대 서울",
         "description": "즐거운 먹거리를 즐기고, 쇼핑을 할 수 있는 현대백화점 더현대 서울입니다.",
         "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210527_297%2F16220986701968f1N7_JPEG%2F1.jpg",
         "tags": ["쇼핑", "도심", "사진 명소", "새로운 음식 시도", "좋은 접근성"],
-        "summary": "더현대 서울은 다양한 브랜드와 음식점들이 입점해 있는 현대백화점으로, 서울의 가장 트렌디한 쇼핑 명소 중 하나입니다. 최신 유행을 반영한 상점들과 음식들이 많아 쇼핑과 먹거리를 동시에 즐길 수 있습니다. 다양한 문화 행사와 팝업 스토어도 자주 열립니다.",
-        "surrounding": "여의도: 금융 중심지와 다양한 먹거리가 밀집한 지역. IFC몰: 세계적인 브랜드와 레스토랑들이 밀집한 쇼핑몰입니다. 한강공원: 한적하게 산책이나 자전거를 타며 여유로운 시간을 보낼 수 있습니다."
+        "summary": "더현대 서울은 최신 트렌드의 패션 브랜드와 다양한 먹거리가 결합된 공간입니다. 다양한 레스토랑, 카페, 매장들이 모여 있어 쇼핑과 미식을 동시에 즐길 수 있습니다. 편리한 교통 접근성과 넓은 공간 덕분에 방문객들에게 매우 인기가 많습니다.",
+        "surrounding": "영등포: 서울의 상업 중심지로, 다양한 쇼핑몰과 레스토랑이 밀집해 있습니다. 여의도: 금융의 중심지로, 고급 레스토랑과 문화 시설들이 있습니다."
     },
-    {
-        "name": "코엑스",
-        "description": "도서관, 팝업스토어, 영화관, 음식점 등 여러 활동을 즐길 수 있는 명소입니다.",
-        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMDFfMTM1%2FMDAxNzA5MjkzMjk5MTA4.gdVknLSuCHHQuBK9_SHBnqe_rN0P5WV5WNF4FORD8tcg.Fbe6GAgm6FSNxiXz0uJ01v1zPFhhCsCHICjwM3ChaR0g.JPEG%2F0cosunokci003.jpg&type=sc960_832",
-        "tags": ["쇼핑", "문학 활동", "도심", "사진 명소", "새로운 음식 시도", "예술 관련 교양 쌓기", "좋은 접근성"],
-        "summary": "코엑스는 서울의 중심부에 위치한 복합문화공간으로, 도서관, 영화관, 쇼핑몰 등이 한곳에 모여 있습니다. 다양한 문화 프로그램과 전시회가 열리며, 세계 각국의 음식을 즐길 수 있는 레스토랑들도 있습니다. 서울에서 가장 바쁜 도심 속의 오아시스 같은 공간입니다.",
-        "surrounding": "삼성역: 서울의 중심지로, 쇼핑과 먹거리가 다양합니다. 봉은사: 서울의 유명한 사찰로, 고요하고 평화로운 분위기에서 문화 체험을 할 수 있습니다. 스타필드 코엑스몰: 다양한 쇼핑과 영화관이 있는 큰 복합 쇼핑몰입니다."
-    }
+    # 추가 관광지 데이터...
 ]
 
 # 질문 및 선택지 설정
@@ -95,12 +88,14 @@ if st.button("추천받기"):
     
     # 일치 태그 개수가 높은 순으로 정렬하고 상위 두 개 선택
     matching_scores.sort(key=lambda x: x[1], reverse=True)
-    top_destinations = [destination for destination, score in matching_scores[:2]]
+    top_destinations = [destination for destination, score in matching_scores[:5]]  # 추천 5개로 수정
 
-    # 추천 결과 표시
+    # 추천된 장소 목록을 표시하고, 선택된 장소에 대한 세부 정보를 보여주는 기능 추가
     for place in top_destinations:
-        st.subheader(place["name"])
-        st.write(place["description"])
-        st.image(place["image_url"], use_column_width=True)
-        st.write(f"**세 줄 요약**: {place['summary']}")
-        st.write(f"**주변 상권**: {place['surrounding']}")
+        if st.button(f"자세히 보기: {place['name']}"):
+            st.subheader(place["name"])
+            st.write(place["description"])
+            st.image(place["image_url"], use_column_width=True)
+            st.write(f"**세 줄 요약**: {place['summary']}")
+            st.write(f"**주변 상권**: {place['surrounding']}")
+
