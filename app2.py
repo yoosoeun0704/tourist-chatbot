@@ -82,13 +82,12 @@ if st.button("추천받기"):
             }
 
 # "더 알아보기" 버튼 클릭 후 세부 정보를 출력하는 부분
-if '경복궁' in st.session_state:
-    st.write(f"### {st.session_state['경복궁']['summary']}")
-    st.write(f"### 주변 상권: {st.session_state['경복궁']['surrounding_area']}")
-
-if '인사동길' in st.session_state:
-    st.write(f"### {st.session_state['인사동길']['summary']}")
-    st.write(f"### 주변 상권: {st.session_state['인사동길']['surrounding_area']}")
+for place in destinations:
+    # 세부 정보가 세션 상태에 있으면 출력
+    if place["name"] in st.session_state:
+        st.write(f"### {place['name']}에 대해 더 알아보기")
+        st.write(f"**세 줄 요약**: {st.session_state[place['name']]['summary']}")
+        st.write(f"**주변 상권**: {st.session_state[place['name']]['surrounding_area']}")
 
 
 
