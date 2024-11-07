@@ -281,7 +281,7 @@ destinations = [
     {
         "name": "용인 에버랜드",
         "description": "에버랜드는 다양한 놀이기구와 테마가 있는 대형 테마파크로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2FIMG_2660.jpg&type=sc960_832",
         "tags": ["액티비티", "가족", "문화 체험", "사진 명소", "안전하고 편안한 환경"],
         "summary": "에버랜드는 놀이기구, 동물원, 수상쇼 등 다양한 즐길 거리를 제공하는 대형 테마파크입니다. 연령대에 상관없이 모든 사람이 즐길 수 있는 다양한 테마와 놀이기구가 준비되어 있습니다. 특히, 시즌별로 다채로운 축제와 공연이 열려 방문객들의 큰 인기를 끌고 있습니다.",
         "surrounding_area": "에버랜드 주변에는 자연을 즐길 수 있는 리조트와 음식점들이 위치해 있으며, 근처의 용인 한국민속촌도 함께 방문할 수 있는 인기 관광지입니다."
