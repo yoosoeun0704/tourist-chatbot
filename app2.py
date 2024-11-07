@@ -414,11 +414,6 @@ if 'user_answers' not in st.session_state:
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
 
-# 처음으로 돌아가기 버튼 추가
-if st.button("처음으로 돌아가기"):
-    st.session_state.user_answers = []
-    st.session_state.recommended_destinations = []
-
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
