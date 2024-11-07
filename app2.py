@@ -265,7 +265,7 @@ destinations = [
     {
         "name": "가평 쁘띠프랑스",
         "description": "쁘띠프랑스는 프랑스의 작은 마을을 재현한 테마파크로, 다양한 문화 체험이 가능합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTVfMjEx%2FMDAxNzE4NDUxNDU2MTcw.hH6WQ4bY-N6gedv1qd9U0fR4KE9KEUDhYUAeSwg9uwMg.FiAUaKn65XuKXcNKR8_qpO_OlREkACzCxCJxOu7JDR0g.JPEG%2FKakaoTalk_20240615_175216993_08.jpg&type=sc960_832",
         "tags": ["문화 체험", "액티비티", "가족", "사진 명소", "안전하고 편안한 환경"],
         "summary": "쁘띠프랑스는 프랑스를 테마로 한 작은 마을로, 프랑스의 건축 양식과 문화를 경험할 수 있는 장소입니다. 다양한 문화 행사와 공연도 열리며, 유럽의 매력을 느낄 수 있는 곳입니다.",
         "surrounding_area": "쁘띠프랑스 주변에는 다양한 테마파크와 자연 관광지가 위치해 있어 관광과 휴식을 동시에 즐길 수 있는 지역입니다."
