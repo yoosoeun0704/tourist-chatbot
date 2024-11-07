@@ -429,7 +429,7 @@ for place in st.session_state.recommended_destinations:
     
     # 주변 상권과 요약 표시 버튼
     if st.button(f"{place['name']}에 대해 더 알아보기"):
-        st.write("### 요약")
+        st.write("### 세 줄 요약")
         st.write(place["summary"])
         st.write("### 주변 상권")
         st.write(place["surrounding_area"])
