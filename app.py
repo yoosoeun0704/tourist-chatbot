@@ -140,151 +140,151 @@ destinations = [
     {
         "name": "수원화성",
         "description": "수원화성은 조선시대의 대표적인 성곽으로, 유네스코 세계문화유산으로 지정되어 있습니다.",
-        "image_url": "https://www.swcf.or.kr/inc/img/main/mobile_quick_navi_show.png",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MjNfMTYw%2FMDAxNzE2MzkwNDkzNTkw.hGbTTrdhPUfzRFbRWP43dpPpRTLXfWC2QbadfEv-ewcg.-J48L9rp25B-ek0ZpX-fiVUQIpyctcjCV34yJC3RRDkg.JPEG%2F20240426-_C6A8780.jpg&type=sc960_832",
         "tags": ["문화/역사 탐방", "유적지", "문화/역사 체험", "사진 명소", "좋은 접근성", "저렴한 가격"]
     },
     {
         "name": "구리 동구릉",
         "description": "구리 동구릉은 조선 왕릉 중 하나로, 아름다운 자연경관과 함께 역사적 의미를 지닌 장소입니다.",
-        "image_url": "https://www.guri.go.kr/culture/selectTourCntntsWebView.do?tourNo=4&pageUnit=1000&pageIndex=2&searchCnd=all&key=1194&ctgry=7&sortTy=RECOMEND",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140911_179%2Fesilvia_1410396962773dvXGA_JPEG%2F%25B5%25BF%25B1%25B8%25B8%25AA-%25B0%25C7%25BF%25F8%25B8%25AA-%25C1%25B6%25BC%25B1_%25BF%25D5%25B8%25AA-%25BC%25BC%25B0%25E8%25C0%25AF%25BB%25EA-%25C0%25AF%25B3%25D7%25BD%25BA%25C4%25DA_%25BC%25BC%25B0%25E8%25C0%25AF%25BB%25EA-018-20140911-1.JPG&type=sc960_832",
         "tags": ["문화/역사 탐방", "유적지", "문화/역사 체험", "사진 명소", "안전하고 편안한 환경"]
     },
     {
         "name": "파주 임진각",
         "description": "임진각은 남북 분단의 상징적인 장소로, 평화와 통일을 기원하는 공간입니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?menuCode=36&cntntsSn=573",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MTJfMjMw%2FMDAxNjk0NTAxMjkyNDIy.Y7sNP9lTBzSNY2tnS282vF1XPiSsbsmkaOTZEfrwsoYg.vrB_I9gZcoGAjhzpCrlJ7sHs0Kj1DLN4TcI1ueAffAAg.JPEG.bgrace823%2F1694501291656.jpg&type=sc960_832",
         "tags": ["문화/역사 탐방", "자연", "문화/역사 체험", "사진 명소", "독특한 장소", "안전하고 편안한 환경"]
     },
     {
         "name": "안성 남사당놀이",
         "description": "남사당놀이는 전통적인 한국의 민속 공연으로, 다양한 예술적 요소가 결합된 공연입니다.",
-        "image_url": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=b530def8-d159-4853-8434-c98212e985e6",
+        "image_url": "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg3.yna.co.kr%2Fphoto%2Fyna%2FYH%2F2014%2F11%2F26%2FPYH2014112602920006100_P4.jpg&type=sc960_832",
         "tags": ["음악 활동", "무용 활동", "도심", "유적지", "문화/역사 체험", "예술 관련 교양 쌓기", "저렴한 가격", "독특한 장소"]
     },
     {
         "name": "광주 남한산성",
         "description": "남한산성은 조선시대의 방어 시설로, 역사적 가치가 높은 유적지입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDFfMTMx%2FMDAxNzExOTM4NTAxMTk0.Xfva0FMJTvPuKHk4cyDfHMdZ58sb-lj6s0GE9QaSdZUg.sDUyoDQn_DMBicrbgLSN3QaMvUYRPkeM_7YWTRUJKLsg.PNG%2FAR07C9150HZS%25B3%25B2%25C7%25D1%25BB%25EA%25BC%25BA.png&type=sc960_832",
         "tags": ["문화/역사 탐방", "유적지", "문화/역사 체험", "사진 명소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "포천 국립수목원",
         "description": "국립수목원은 다양한 식물과 자연을 체험할 수 있는 공간으로, 힐링을 제공합니다.",
-        "image_url": "https://www.kctg.or.kr/tour/touristSiteView.do?tourist_cd=TOURIST_ID00010693",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA2MTRfMzAw%2FMDAxNDk3NDQxMTk4MjA2.S2RxbQ9-mIpffoZ_p4-2w9GMf7zGJBdjocDqZad08Usg.FL0UoAYDAIwPZPn0CcqouqYnAGMm688LqFXFnZ3uscUg.JPEG.inblue99%2FDSC02579.JPG&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "사진 명소", "저렴한 가격", "독특한 장소", "좋은 접근성", "안전하고 편안한 환경"]
     },
     {
         "name": "포천 산정호수",
         "description": "산정호수는 아름다운 경관과 함께 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?q_gubunCode=1004&menuCode=1&cntntsSn=2",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MTJfNzUg%2FMDAxNzI2MTI5NTE4MTA4.H3knrJSeKiHWRdPlejhO3MFvldiwF_yj3KWtg3D8ZBgg.7H1TLWHPrZRfdyqdLzkmna3KFuFX4XM8ug8ghOd3tgwg.JPEG%2F20240829_151032.jpg&type=sc960_832",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "사진 명소", "도전적인 활동", "독특한 장소", "좋은 접근성"]
     },
     {
         "name": "여주 영릉",
         "description": "영릉은 조선 왕릉 중 하나로, 역사적 가치가 높은 유적지입니다.",
-        "image_url": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=22,00210000,31&pageNo=1_1_1_0",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MTdfMjU2%2FMDAxNjAwMzE2NDMxMjAx.bDmsrSiQiVAO5slVEGsnIdtaZVerUGiIIr-pnJm7ww0g.WvpdpNVukbY_lW514Y0WStVwQHO6sPWb5QGKWdfGiUIg.JPEG.gassembly%2Fthumb_5e51fe1bb8534ebf8d52baecc62bf60b_1438672254893.jpg&type=sc960_832",
         "tags": ["문화/역사 탐방", "유적지", "문화/역사 체험", "사진 명소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "양평 두물머리",
         "description": "두물머리는 아름다운 자연경관과 함께 힐링을 제공하는 장소입니다.",
-        "image_url": "https://www.tripadvisor.co.kr/AttractionsNear-g2024868-d10338816-Namhansanseong_Fortress-Gwangju_Gyeonggi_do.html",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMThfNjEg%2FMDAxNzI5MjI2ODkzNzQ4.Nf6pEchDl80YZJ-s9LMevaAF8K18p3D5-9mbiGRb9mMg.Uqbm_vtwnoEunei6by5bDLfQtcdJawGeetUSWAUenPAg.JPEG%2F%25B5%25CE%25B9%25B0%25B8%25D3%25B8%25AE01.jpg&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "사진 명소", "좋은 접근성", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "가평 아침고요수목원",
         "description": "아침고요수목원은 다양한 식물과 아름다운 경관을 제공하는 힐링 공간입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTVfMjk3%2FMDAxNzE4NDQ0OTkxNjUx.LcyvDUZnMuR4bpxi4T0hglYk05XxGcb4Hs93zUWlRVYg.chIjkDGfPgi87XUJ9ne57TjLvstFdhma8j_a2Cam3Uwg.JPEG%2FIMG_5499.jpg&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "사진 명소", "좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "가평 쁘띠프랑스",
         "description": "쁘띠프랑스는 프랑스의 작은 마을을 재현한 테마파크로, 다양한 문화 체험이 가능합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTVfMjEx%2FMDAxNzE4NDUxNDU2MTcw.hH6WQ4bY-N6gedv1qd9U0fR4KE9KEUDhYUAeSwg9uwMg.FiAUaKn65XuKXcNKR8_qpO_OlREkACzCxCJxOu7JDR0g.JPEG%2FKakaoTalk_20240615_175216993_08.jpg&type=sc960_832",
         "tags": ["문화/역사 탐방", "쇼핑", "도심", "문화/역사 체험", "사진 명소", "새로운 음식 시도", "독특한 장소", "안전하고 편안한 환경"]
     },
     {
         "name": "파주 헤이리예술마을",
         "description": "헤이리예술마을은 다양한 예술가들이 모여 만든 문화 공간으로, 예술과 문화를 체험할 수 있습니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?q_gubunCode=1004&menuCode=1&cntntsSn=2",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata35%2F2008%2F9%2F4%2F91%2Fimg_4648-anndam.jpg&type=sc960_832",
         "tags": ["문화/역사 탐방", "미술 활동", "도심" "문화/역사 체험", "예술 관련 교양 쌓기", "사진 명소", "독특한 장소", "안전하고 편안한 환경"]
     },
     {
         "name": "용인 에버랜드",
         "description": "에버랜드는 다양한 놀이기구와 테마가 있는 대형 테마파크로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMzFfNDAg%2FMDAxNzExODE0Mjc4OTc1.j7jI-qsvEUOLtjA8vYu6-yTOAru7L5GLKcn3P1-TXuMg.nPwsczRYIoUN7AEYVryS9vblR4QN6GP42RGnWCuu8SQg.JPEG%2FIMG_2660.jpg&type=sc960_832",
         "tags": ["액티비티", "도심", "자연", "사진 명소", "도전적인 활동", "독특한 장소"]
     },
     {
         "name": "용인 한국민속촌",
         "description": "한국민속촌은 전통 한국 문화를 체험할 수 있는 공간으로, 다양한 전통 공연과 체험 프로그램이 있습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200525_120%2F1590394419044DhFmg_JPEG%2FSp-rpylEcqrQII9AKbA7Bamy.jpg",
         "tags": ["문화/역사 탐방", "음악 활동", "무용 활동", "액티비티", "유적지", "문화/역사 체험", "도전적인 활동", "새로운 음식 시도", "사진 명소", "좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "연천 한탄강",
         "description": "한탄강은 아름다운 자연경관과 함께 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MTFfNjgg%2FMDAxNjg5MDgzMDgyMTU1.H-lfBOA3r3l4FexsBanABC71P1PvJumM6OsdXzm2suAg.liQzEveNHZkpRFNEtlBu0c4mS32dmXNbXWC29XR2d6Ig.JPEG.windyuzin%2F%25C5%25A9%25B1%25E2%25BA%25AF%25C8%25AFIMG_1997.jpg&type=sc960_832",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "사진 명소", "도전적인 활동", "독특한 장소", "안전하고 편안한 환경"]
     },
     {
         "name": "과천 서울랜드",
         "description": "서울랜드는 다양한 놀이기구와 테마가 있는 대형 테마파크로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MTNfMjQz%2FMDAxNjg2NjU2NTY2MDk5.9hPWbxxWFI460J2-swcOb1hWEIxk97dVlV-TwqDyksAg.po3SZKf_h-1PIqEy_QizrB6CPZQj-4gp9apizsse-CYg.JPEG.k30935%2F20230611%25A3%25DF183853.jpg&type=sc960_832",
         "tags": ["액티비티", "도심", "도전적인 활동", "사진 명소", "독특한 장소"]
     },
     {
         "name": "서울대공원",
         "description": "서울대공원은 동물원과 식물원이 함께 있는 대형 공원으로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMzBfMzEg%2FMDAxNzMwMjIyNzE4NDc0.gavDBRGkM2Firv-2l1WpaY3ueaypY--Qfk3n3e4bK40g.Px9e_GzC-hwWPPD1h6WGXxfDo8jrvUOcLbW-E7Sr4psg.JPEG%2FJHW03360.JPG",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "사진 명소", "좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "광명동굴",
         "description": "광명동굴은 다양한 동굴 탐험과 체험을 제공하는 관광지로, 신비로운 자연을 경험할 수 있습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTdfMjMg%2FMDAxNzEwNjYwMzk3Nzcx.01hdE4mfhDZI3qeODG6Y3-tkO3_xrH2Yr4clZcdwyYwg.Hy-BAQpvkF584P79uEk7O7zXTdtShWKkmbEbz8_zC6og.JPEG%2FDSC04113.JPG&type=sc960_832",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "도전적인 활동", "사진 명소", "독특한 장소"]
     },
     {
         "name": "화성 제부도",
         "description": "제부도는 아름다운 해변과 자연경관을 제공하는 관광지로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMzExMDZfMTgz%2FMDAxNjk5MjM0NDUwODYy.6sYu-1BRmOjfWwpTNAE2mxNQWrMSrl4osVtLoztYGhUg.NZXIaBxuvPoPrhOpFSToEl65iiZAfkwLRteUnc7wcT0g.PNG%2FIksbJj1bBxB2QAUu8BPCpUFEn5Mw.jpg&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "사진 명소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "광주 화담숲",
         "description": "화담숲은 다양한 식물과 아름다운 경관을 제공하는 힐링 공간입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMjBfMTQ0%2FMDAxNjY2MjM4NzEzNDI1.qCO0t7FNTsrmJe6top5AlUcBlC5JvoZGXSoZoUQHieQg.mFy1vdqnjivvmyWgqpgttzzt1V0geiSLjNkk4LjyXcIg.JPEG.dal831%2F20221016%25A3%25DF111958.jpg&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "사진 명소", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "포천아트밸리",
-        "description": "포천아트밸리는 예술과 자연이 어우러진 공간으로, 다양한 문화 체험이 가능합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
-        "tags": ["문화/역사 탐방", "자연 탐험", "자연", "문화/역사 체험", "예술 관련 교양 쌓기", "힐링", "사진 명소", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
+        "description": "포천아트밸리는 예술과 자연이 어우러진 공간으로, 다양한 액티비티와 문화 체험이 가능합니다.",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMzBfMTk5%2FMDAxNzAzOTI4NzIwMDQ5.W3fzYG94ieXm_S-P6UyJS-YC1TeSWDqpZIP37QrRrzUg.lew0rGFAKpayjvshZ4MMtLidtMuHPFt6NuEC6vz5Voog.JPEG.tototorlck%2F20230520%25A3%25DF120832.jpg&type=sc960_832",
+        "tags": ["액티비티", "자연 탐험", "자연", "도전적인 활동", "힐링", "사진 명소", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "안성팜랜드",
         "description": "안성팜랜드는 농업과 자연을 체험할 수 있는 공간으로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMTFfMjgx%2FMDAxNzI4NjA2OTkxMjQ4.vJfbYsc0tdBzXZKaVUblkasPjcs4Z_2TB6MAuj9tTFog.mSrIiZEqm40TpdV00fC4kAMkYUQEzOaLrKiaHpnQIKIg.JPEG%2F%25BE%25C8%25BC%25BA%25C6%25CA%25B7%25A3%25B5%25E5%25C7%25CE%25C5%25A9%25B9%25C4%25B8%25AE_19.jpg&type=sc960_832",
         "tags": ["액티비티", "문화/역사 탐방", "자연", "문화/역사 체험", "사진 명소", "힐링", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "포천 허브아일랜드",
         "description": "허브아일랜드는 다양한 허브와 식물을 체험할 수 있는 공간으로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMjBfMjQ0%2FMDAxNjk3NzU0MTU1NDA3.L9G4pFLgwD9Kbb9nToi12JdU5R2UYENX3c0CszIFGHwg.Dzd9uHcj4lTHc_pqLbb5jghUjNi7HIAY-ETpzNtWsd8g.JPEG.maum0577%2F4.jpg&type=sc960_832",
         "tags": ["자연 탐험", "자연", "힐링", "새로운 음식 시도", "사진 명소", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     },
     {
         "name": "연천 재인폭포 공원",
         "description": "재인폭포 공원은 아름다운 폭포와 자연경관을 제공하는 관광지로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMTFfMjU0%2FMDAxNzI4NjI0NTY2NzEw.1a98yvC8jSDVfFv-aGqcYvMusv5EJt1cb_3lLH0NGiUg.JLNNxqjG_89doOyCleoXU0Ti-todHD5YB4BNXjNLctog.JPEG%2F20240528_132303_HDR.jpg&type=sc960_832",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "사진 명소", "독특한 장소", "저렴한 가격"]
     },
     {
         "name": "가평 자라섬",
         "description": "자라섬은 아름다운 자연경관과 다양한 레저 활동을 즐길 수 있는 장소입니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/sunny/?src=http%3A%2F%2Fwww.dicalove.com%2Ffiles%2Fattach%2Fimages%2F154%2F317%2F466%2F025%2Fcb9d9632331b0e0ddf528c3922d23083.jpg&type=sc960_832",
         "tags": ["자연 탐험", "액티비티", "자연", "힐링", "도전적인 활동", "사진 명소", "독특한 장소", "저렴한 가격"]
     }
 ]
