@@ -329,18 +329,15 @@ if st.button("추천받기"):
         score = sum(tag in destination["tags"] for tag in user_answers)
         matching_scores.append((destination, score))
     
-    # 일치 태그 개수가 높은 순으로 정렬하고 상위 두 개 선택
+    # 일치 태그 개수가 높은 순으로 정렬하고 상위 네 개 선택
     matching_scores.sort(key=lambda x: x[1], reverse=True)
-    top_destinations = [destination for destination, score in matching_scores[:2]]
+    top_destinations = [destination for destination, score in matching_scores[:4]]
+    
+    # 상위 네 개 중 두 개를 무작위로 선택
+    recommended_destinations = random.sample(top_destinations, 2)
 
     # 추천 결과 표시
-    for place in top_destinations:
+    for place in recommended_destinations:
         st.subheader(place["name"])
         st.write(place["description"])
         st.image(place["image_url"], use_column_width=True)
-        # 관광지 요약과 주변 상권 표시
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.write("### 요약")
-            st.write(place["summary"])
-            st.write("### 주변 상권")
-            st.write(place["surrounding_area"])
