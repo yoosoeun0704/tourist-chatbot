@@ -273,7 +273,7 @@ destinations = [
     {
         "name": "파주 헤이리예술마을",
         "description": "헤이리예술마을은 다양한 예술가들이 모여 만든 문화 공간으로, 예술과 문화를 체험할 수 있습니다.",
-        "image_url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?q_gubunCode=1004&menuCode=1&cntntsSn=2",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata35%2F2008%2F9%2F4%2F91%2Fimg_4648-anndam.jpg&type=sc960_832",
         "tags": ["문화 체험", "예술 관련 교양 쌓기", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "헤이리예술마을은 예술과 문화를 주제로 다양한 갤러리와 작업실이 모여 있는 마을입니다. 예술 작품을 감상하고, 창작 과정을 직접 체험할 수 있는 프로그램들이 제공됩니다.",
         "surrounding_area": "헤이리 예술마을 주변에는 아트샵, 카페, 레스토랑들이 있어 예술적인 분위기 속에서 식사와 쇼핑을 즐길 수 있습니다."
