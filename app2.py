@@ -369,7 +369,7 @@ destinations = [
     {
         "name": "연천 재인폭포 공원",
         "description": "재인폭포 공원은 아름다운 폭포와 자연경관을 제공하는 관광지로, 힐링을 제공합니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMTFfMjU0%2FMDAxNzI4NjI0NTY2NzEw.1a98yvC8jSDVfFv-aGqcYvMusv5EJt1cb_3lLH0NGiUg.JLNNxqjG_89doOyCleoXU0Ti-todHD5YB4BNXjNLctog.JPEG%2F20240528_132303_HDR.jpg&type=sc960_832",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "연천 재인폭포는 맑고 깨끗한 물과 푸른 숲 속에 숨겨진 폭포로, 하이킹과 자연을 즐기기에 좋은 곳입니다. 주변은 깊은 숲과 계곡으로 둘러싸여 있어, 사계절 내내 다양한 자연경관을 감상할 수 있습니다. 특히 여름에는 물놀이를 즐기기 위해 많은 관광객들이 찾습니다.",
         "surrounding_area": "재인폭포 주변에는 트레킹 코스와 야영장이 있어 야외 활동을 즐기기에 적합합니다. 또한, 근처에는 지역 식당에서 신선한 재료로 만든 전통적인 음식을 맛볼 수 있습니다."
