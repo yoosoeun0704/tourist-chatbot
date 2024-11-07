@@ -313,7 +313,7 @@ destinations = [
     {
         "name": "서울대공원",
         "description": "서울대공원은 동물원과 식물원이 함께 있는 대형 공원으로, 가족 단위 방문객에게 인기가 많습니다.",
-        "image_url": "https://www.gjcity.go.kr/tour/contents.do?mId=0101010100",
+        "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMzBfMzEg%2FMDAxNzMwMjIyNzE4NDc0.gavDBRGkM2Firv-2l1WpaY3ueaypY--Qfk3n3e4bK40g.Px9e_GzC-hwWPPD1h6WGXxfDo8jrvUOcLbW-E7Sr4psg.JPEG%2FJHW03360.JPG",
         "tags": ["자연 탐험", "힐링", "액티비티", "사진 명소", "안전하고 편안한 환경"],
         "summary": "서울대공원은 서울 근교에 있는 대형 공원으로, 동물원, 식물원, 호수 등이 잘 조성되어 있어 산책과 여가를 즐기기 좋은 장소입니다. 동물원에서는 다양한 동물을 관람할 수 있으며, 자연 속에서 힐링할 수 있는 공간입니다.",
         "surrounding_area": "서울대공원 근처에는 맛집과 카페가 많고, 가까운 과천 서울랜드와 함께 관광할 수 있어 많은 방문객들이 찾습니다."
