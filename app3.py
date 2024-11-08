@@ -470,4 +470,4 @@ if st.button("추천받기"):
             st.write("### 세 줄 요약")
             st.write(place["summary"])
             st.write("### 주변 상권")
-            st.write(place["surround
+            st.write(place["surrounding_area"])
