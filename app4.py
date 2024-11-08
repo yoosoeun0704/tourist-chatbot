@@ -422,7 +422,7 @@ for i, q in enumerate(questions_options):
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
 
-import random
+import random  # 랜덤 모듈 추가
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -459,15 +459,15 @@ if st.button("추천받기"):
         # 우선순위 태그와 일치하는 관광지가 없을 경우 상위 네 개 중 무작위 두 개 선택
         recommended_destinations = random.sample(top_destinations, 2)
 
- # 추천 결과 표시
-for place in recommended_destinations:
-    st.subheader(place["name"])
-    st.write(place["description"])
-    st.image(place["image_url"], use_column_width=True)
+    # 추천 결과 표시
+    for place in recommended_destinations:
+        st.subheader(place["name"])
+        st.write(place["description"])
+        st.image(place["image_url"], use_column_width=True)
 
-    # '더 알아보기' 버튼을 클릭한 관광지에 대한 정보를 session_state에 저장
-    if st.button(f"{place['name']}에 대해 더 알아보기"):
-        st.session_state.selected_place = place  # 선택한 관광지 정보를 세션 상태에 저장
+        # '더 알아보기' 버튼을 클릭한 관광지에 대한 정보를 session_state에 저장
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
+            st.session_state.selected_place = place  # 선택한 관광지 정보를 세션 상태에 저장
 
 # '세 줄 요약'과 '주변 상권'을 세션 상태에서 가져와서 표시
 if 'selected_place' in st.session_state:
