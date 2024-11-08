@@ -421,7 +421,7 @@ if 'recommended_destinations' not in st.session_state:
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
     if len(st.session_state.user_answers) < len(questions_options):
-        st.session_state.user_answers.append(answer)
+        st.session_state.user_answers.append(answer)  # 사용자의 답변을 세션 상태에 저장
 
 # 추천 버튼
 if st.button("추천받기"):
