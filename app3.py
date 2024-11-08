@@ -431,7 +431,6 @@ if st.button("추천받기"):
     matching_scores = []
 
     for destination in destinations:
-        # 각 관광지의 태그와 사용자 선택 태그의 일치 수를 셈
         score = 0
         for tag in st.session_state.user_answers:
             if tag in destination["tags"]:
@@ -441,26 +440,11 @@ if st.button("추천받기"):
     # 점수가 높은 순으로 정렬
     matching_scores.sort(key=lambda x: x[1], reverse=True)
 
-    # 점수가 높은 관광지부터 순차적으로 선택 (랜덤 제거)
+    # 가장 일치하는 관광지부터 추천 (점수가 높은 순서대로)
     top_destinations = [destination for destination, score in matching_scores]
 
-    # 우선순위 태그 정의
-    priority_tags = ["문화/역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
-                     "문학적 활동", "음악 활동", "무용 활동", "미술 활동", 
-                     "도심", "자연", "유적지"]
-
-    # 사용자가 선택한 태그와 관광지의 태그가 정확히 일치하는 관광지 필터링
-    priority_destinations = [
-        destination for destination in top_destinations
-        if any(tag in destination["tags"] for tag in st.session_state.user_answers)  # 정확히 일치하는 태그만 필터링
-    ]
-    
-    # 우선순위 태그와 일치하는 관광지가 하나 이상이면, 그 관광지들을 순차적으로 선택
-    if len(priority_destinations) > 0:
-        recommended_destinations = priority_destinations[:2]  # 우선순위가 높은 관광지 2개만 추천
-    else:
-        # 우선순위 태그와 일치하는 관광지가 없다면 상위 관광지 2개만 추천
-        recommended_destinations = top_destinations[:2]
+    # 추천할 관광지는 상위 2개로 제한
+    recommended_destinations = top_destinations[:2]
 
     # 추천 결과 표시
     for place in recommended_destinations:
