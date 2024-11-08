@@ -422,7 +422,7 @@ for i, q in enumerate(questions_options):
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
 
-import random  # 랜덤 모듈 추가
+import random
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -476,3 +476,4 @@ if 'selected_place' in st.session_state:
     st.write(place["summary"])
     st.write("### 주변 상권")
     st.write(place["surrounding_area"])
+
