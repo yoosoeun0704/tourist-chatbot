@@ -460,7 +460,7 @@ if st.button("추천받기"):
         recommended_destinations = random.sample(top_destinations, 2)
 
     # 추천 결과 표시
-    for place in recommended_destinations:
+    for place in st.session_state.recommended_destinations:
         st.subheader(place["name"])
         st.write(place["description"])
         st.image(place["image_url"], use_column_width=True)
