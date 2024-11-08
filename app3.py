@@ -415,16 +415,12 @@ if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
-if 'show_details' not in st.session_state:
-    st.session_state.show_details = {}
-
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
-
 
 import random
 
@@ -463,18 +459,15 @@ if st.button("추천받기"):
         # 우선순위 태그와 일치하는 관광지가 없을 경우 상위 네 개 중 무작위 두 개 선택
         recommended_destinations = random.sample(top_destinations, 2)
 
-   # 추천 결과 표시
-for place in recommended_destinations:
-    st.subheader(place["name"])
-    st.write(place["description"])
-    st.image(place["image_url"], use_column_width=True)
-    
-    # 주변 상권과 요약 표시 버튼
-    if st.button(f"{place['name']}에 대해 더 알아보기", key=place["name"]):
-        st.session_state.show_details[place["name"]] = not st.session_state.show_details.get(place["name"], False)
-
-    if st.session_state.show_details.get(place["name"], False):
-        st.write("### 세 줄 요약")
-        st.write(place["summary"])
-        st.write("### 주변 상권")
-        st.write(place["surrounding_area"])
+    # 추천 결과 표시
+    for place in recommended_destinations:
+        st.subheader(place["name"])
+        st.write(place["description"])
+        st.image(place["image_url"], use_column_width=True)
+        
+        # 주변 상권과 요약 표시 버튼
+        if st.button(f"{place['name']}에 대해 더 알아보기"):
+            st.write("### 세 줄 요약")
+            st.write(place["summary"])
+            st.write("### 주변 상권")
+            st.write(place["surround
