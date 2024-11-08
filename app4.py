@@ -423,6 +423,7 @@ for i, q in enumerate(questions_options):
         st.session_state.user_answers.append(answer)
 
 import random
+import streamlit as st
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -476,4 +477,5 @@ if 'selected_place' in st.session_state:
     st.write(place["summary"])
     st.write("### 주변 상권")
     st.write(place["surrounding_area"])
+
 
