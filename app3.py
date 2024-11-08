@@ -423,34 +423,22 @@ for i, q in enumerate(questions_options):
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
 
-import random
-
 # 추천 버튼
 if st.button("추천받기"):
-    # 사용자 선택한 답변을 태그와 비교하여 일치하는 태그 찾기
+    # 각 관광지의 일치하는 태그 개수를 저장
     matching_scores = []
-
+    
     for destination in destinations:
-        # 각 관광지의 태그와 사용자 답변의 정확한 일치 태그 수를 세기
-        score = sum(1 for tag in destination["tags"] if tag in st.session_state.user_answers)
+        # 일치하는 태그 수 계산
+        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)  # 세션 상태에서 사용자 답변 가져오기
         matching_scores.append((destination, score))
     
-    # 일치 태그 개수가 높은 순으로 정렬하고 상위 네 개 선택
-    matching_scores.sort(key=lambda x: x[1], reverse=True)
-    top_destinations = [destination for destination, score in matching_scores[:4]]
-
-    # 우선순위 태그 정의
-    priority_tags = ["문화/역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
-                     "문학적 활동", "음악 활동", "무용 활동", "미술 활동", 
-                     "도심", "자연", "유적지"]
-
     # 사용자가 선택한 태그 중 우선순위 태그와 일치하는 관광지 필터링
     priority_destinations = [
         destination for destination in top_destinations
-        if any(tag in destination["tags"] for tag in st.session_state.user_answers)  # 정확히 일치하는 태그만 필터링
+        if any(tag in priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers)  # 세션 상태에서 사용자 답변 가져오기
     ]
-
-    # 우선순위 태그와 일치하는 관광지가 두 개 이상이면 무작위 두 개 선택
+     # 우선순위 태그와 일치하는 관광지가 두 개 이상이면 무작위 두 개 선택
     if len(priority_destinations) >= 2:
         recommended_destinations = random.sample(priority_destinations, 2)
     elif len(priority_destinations) == 1:
