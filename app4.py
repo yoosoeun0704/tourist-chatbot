@@ -423,7 +423,6 @@ for i, q in enumerate(questions_options):
         st.session_state.user_answers.append(answer)
 
 import random
-import streamlit as st
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -465,17 +464,10 @@ if st.button("추천받기"):
         st.subheader(place["name"])
         st.write(place["description"])
         st.image(place["image_url"], use_column_width=True)
-
-        # '더 알아보기' 버튼을 클릭한 관광지에 대한 정보를 session_state에 저장
+        
+        # 주변 상권과 요약 표시 버튼
         if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.session_state.selected_place = place  # 선택한 관광지 정보를 세션 상태에 저장
-
-# '세 줄 요약'과 '주변 상권'을 세션 상태에서 가져와서 표시
-if 'selected_place' in st.session_state:
-    place = st.session_state.selected_place
-    st.write("### 세 줄 요약")
-    st.write(place["summary"])
-    st.write("### 주변 상권")
-    st.write(place["surrounding_area"])
-
-
+            st.write("### 세 줄 요약")
+            st.write(place["summary"])
+            st.write("### 주변 상권")
+            st.write(place["surround"])
