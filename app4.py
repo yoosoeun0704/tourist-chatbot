@@ -405,7 +405,7 @@ questions_options = [
     
 ]
 
-# Streamlit 앱 레이아웃 설정
+# Streamlit 앱 레이아웃 설정 
 st.title("T.OUR:관광지를 추천해드립니다")
 
 # 세션 상태 초기화
@@ -413,8 +413,8 @@ if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
-if 'selected_places' not in st.session_state:
-    st.session_state.selected_places = []  # '더 알아보기' 버튼 클릭 시 선택된 장소들을 저장하는 리스트
+if 'selected_place' not in st.session_state:
+    st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
@@ -458,20 +458,19 @@ if st.button("추천받기"):
         st.session_state.recommended_destinations = random.sample(top_destinations, 2)
 
 # 추천 결과 표시
-for idx, place in enumerate(st.session_state.recommended_destinations):
+for place in st.session_state.recommended_destinations:
     st.subheader(place["name"])
     st.write(place["description"])
     st.image(place["image_url"], use_column_width=True)
     
     # '더 알아보기' 버튼
-    button_key = f"more_{idx}"
-    if st.button(f"{place['name']}에 대해 더 알아보기", key=button_key):
-        # '더 알아보기' 클릭 시 선택된 장소를 세션에 추가
-        if place not in st.session_state.selected_places:
-            st.session_state.selected_places.append(place)
+    if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
+        st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
+        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
 
 # 선택된 관광지의 세부 정보 표시
-for place in st.session_state.selected_places:
+if st.session_state.selected_place:
+    place = st.session_state.selected_place
     st.write("### 세 줄 요약")
     st.write(place["summary"])
     st.write("### 주변 상권")
