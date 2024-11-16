@@ -408,21 +408,21 @@ questions_options = [
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR:관광지를 추천해드립니다")
 
-user_answers = [] # 사용자의 답변을 저장
+user_answers = []  # 사용자의 답변을 저장
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
+if 'show_details' not in st.session_state:
+    st.session_state.show_details = None  # 선택된 관광지의 세부정보를 저장
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
-
-import random
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -436,7 +436,7 @@ if st.button("추천받기"):
     
     for destination in destinations:
         # 일치하는 태그 수 계산
-        score = sum(tag in destination["tags"] for tag in user_answers)
+        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
         matching_scores.append((destination, score))
     
     # 일치 태그 개수가 높은 순으로 정렬하고 상위 네 개 선택
@@ -446,7 +446,7 @@ if st.button("추천받기"):
     # 사용자가 선택한 태그 중 우선순위 태그와 일치하는 관광지 필터링
     priority_destinations = [
         destination for destination in top_destinations
-        if any(tag in priority_tags and tag in destination["tags"] for tag in user_answers)
+        if any(tag in priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers)
     ]
     
     # 우선순위 태그와 일치하는 관광지가 두 개 이상이면 무작위 두 개 선택
@@ -466,8 +466,13 @@ if st.button("추천받기"):
         st.image(place["image_url"], use_column_width=True)
         
         # 주변 상권과 요약 표시 버튼
-        if st.button(f"{place['name']}에 대해 더 알아보기"):
-            st.write("### 세 줄 요약")
-            st.write(place["summary"])
-            st.write("### 주변 상권")
-            st.write(place["surround"])
+        if st.button(f"{place['name']}에 대해 더 알아보기", key=f"details_{place['name']}"):
+            st.session_state.show_details = place  # 선택된 관광지의 세부정보 저장
+
+# 세부정보 표시
+if st.session_state.show_details:
+    place = st.session_state.show_details
+    st.write("### 세 줄 요약")
+    st.write(place["summary"])
+    st.write("### 주변 상권")
+    st.write(place["surrounding_area"])
