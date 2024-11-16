@@ -438,11 +438,13 @@ if st.button("추천받기"):
     activity_answers = [answer for answer in st.session_state.user_answers if answer in activity_tags]
     environment_answers = [answer for answer in st.session_state.user_answers if answer in environment_tags]
 
-    # "활동"과 "환경" 모두 포함된 관광지 필터링
+    # "활동" 태그와 "환경" 태그 모두 포함하는 관광지 필터링
     filtered_destinations = [
         destination for destination in destinations
-        if any(tag in destination["tags"] for tag in activity_answers) and
-           any(tag in destination["tags"] for tag in environment_answers)
+        if all(
+            any(tag in activity_answers for tag in destination["tags"]),  # 활동 태그 포함 여부
+            any(tag in environment_answers for tag in destination["tags"])  # 환경 태그 포함 여부
+        )
     ]
 
     # 필터링된 결과에서 무작위로 2개 선택
@@ -476,7 +478,7 @@ for place in st.session_state.recommended_destinations:
     # '더 알아보기' 버튼
     if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
         st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
-        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
+          # 한 번 클릭하면 하나만 표시되도록 'break' 추가
 
 # 선택된 관광지의 세부 정보 표시
 if st.session_state.selected_place:
