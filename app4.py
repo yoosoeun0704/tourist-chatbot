@@ -406,11 +406,8 @@ questions_options = [
 ]
 
 
-# Streamlit 앱 레이아웃 설정
+# Streamlit 앱 레이아웃 설정 
 st.title("T.OUR: 관광지를 추천해드립니다")
-
-# 사용자의 답변을 저장할 리스트
-user_answers = []
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
@@ -426,31 +423,38 @@ for i, q in enumerate(questions_options):
     if len(st.session_state.user_answers) < len(questions_options):
         st.session_state.user_answers.append(answer)
 
-# 추천받기 버튼
+# 추천 버튼
 if st.button("추천받기"):
-    # 첫 번째와 두 번째 질문에 해당하는 태그들을 필터링
-    selected_tags = st.session_state.user_answers[:2]  # 첫 두 개의 질문에 대한 태그들만 사용
-
-    recommended_destinations = []
+    # 이전에 선택된 장소 초기화
+    st.session_state.selected_place = None  # 더 알아보기 상태 초기화
     
-    # 각 관광지가 두 질문에 해당하는 태그를 모두 포함하는지 확인
-    for destination in destinations:
-        if all(tag in destination["tags"] for tag in selected_tags):
-            recommended_destinations.append(destination)
-
-    # 추천 장소가 있을 경우 결과 표시
-    if recommended_destinations:
-        st.session_state.recommended_destinations = recommended_destinations
-        for place in recommended_destinations:
-            st.subheader(place["name"])
-            st.write(place["description"])
-            st.image(place["image_url"], use_column_width=True)
-
-            # '더 알아보기' 버튼
-            if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
-                st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
+    # 첫 두 질문의 답변을 기반으로 추천할 장소 필터링
+    first_activity_tag = st.session_state.user_answers[0]  # 첫 번째 질문의 답변
+    second_environment_tag = st.session_state.user_answers[1]  # 두 번째 질문의 답변
+    
+    # 첫 두 질문의 태그를 모두 포함하는 관광지 필터링
+    filtered_destinations = [
+        destination for destination in destinations
+        if first_activity_tag in destination["tags"] and second_environment_tag in destination["tags"]
+    ]
+    
+    # 필터링된 관광지가 없으면 상위 네 개 중 무작위 두 개 선택
+    if filtered_destinations:
+        st.session_state.recommended_destinations = random.sample(filtered_destinations, min(2, len(filtered_destinations)))
     else:
-        st.write("해당하는 장소가 없습니다.")
+        # 상위 네 개 중 무작위 두 개 선택
+        st.session_state.recommended_destinations = random.sample(destinations, min(2, len(destinations)))
+
+# 추천 결과 표시
+for place in st.session_state.recommended_destinations:
+    st.subheader(place["name"])
+    st.write(place["description"])
+    st.image(place["image_url"], use_column_width=True)
+    
+    # '더 알아보기' 버튼
+    if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
+        st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
+        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
 
 # 선택된 관광지의 세부 정보 표시
 if st.session_state.selected_place:
