@@ -406,20 +406,23 @@ questions_options = [
 ]
 
 # Streamlit 앱 레이아웃 설정
-st.title("T.OUR: 관광지를 추천해드립니다")
+st.title("T.OUR:관광지를 추천해드립니다")
+
+user_answers = []  # 사용자의 답변을 저장
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
-    st.session_state.user_answers = [None] * len(questions_options)
+    st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
-if 'show_details' not in st.session_state:
-    st.session_state.show_details = None  # 선택된 관광지의 세부정보를 저장
+if 'selected_place' not in st.session_state:
+    st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
-    answer = st.selectbox(q["question"], options=q["options"], index=0 if st.session_state.user_answers[i] is None else q["options"].index(st.session_state.user_answers[i]), key=f"question_{i}")
-    st.session_state.user_answers[i] = answer  # 선택한 답변을 세션 상태에 저장
+    answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
+    if len(st.session_state.user_answers) < len(questions_options):
+        st.session_state.user_answers.append(answer)
 
 # 추천 버튼
 if st.button("추천받기"):
@@ -433,7 +436,7 @@ if st.button("추천받기"):
     
     for destination in destinations:
         # 일치하는 태그 수 계산
-        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers if tag is not None)
+        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
         matching_scores.append((destination, score))
     
     # 일치 태그 개수가 높은 순으로 정렬하고 상위 네 개 선택
@@ -443,37 +446,34 @@ if st.button("추천받기"):
     # 사용자가 선택한 태그 중 우선순위 태그와 일치하는 관광지 필터링
     priority_destinations = [
         destination for destination in top_destinations
-        if any(tag in priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers if tag is not None)
+        if any(tag in priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers)
     ]
     
     # 우선순위 태그와 일치하는 관광지가 두 개 이상이면 무작위 두 개 선택
     if len(priority_destinations) >= 2:
-        recommended_destinations = random.sample(priority_destinations, 2)
+        st.session_state.recommended_destinations = random.sample(priority_destinations, 2)
     elif len(priority_destinations) == 1:
         # 하나만 있으면 그 하나를 추천
-        recommended_destinations = priority_destinations
+        st.session_state.recommended_destinations = priority_destinations
     else:
         # 우선순위 태그와 일치하는 관광지가 없을 경우 상위 네 개 중 무작위 두 개 선택
-        recommended_destinations = random.sample(top_destinations, 2)
+        st.session_state.recommended_destinations = random.sample(top_destinations, 2)
 
-    # 추천 결과 표시
-    for place in recommended_destinations:
-        st.subheader(place["name"])
-        st.write(place["description"])
-        st.image(place["image_url"], use_column_width=True)
-        
-        # 주변 상권과 요약 표시 버튼
-        if st.button(f"{place['name']}에 대해 더 알아보기", key=f"details_{place['name']}"):
-            st.session_state.show_details = place  # 선택된 관광지의 세부정보 저장
+# 추천 결과 표시
+for place in st.session_state.recommended_destinations:
+    st.subheader(place["name"])
+    st.write(place["description"])
+    st.image(place["image_url"], use_column_width=True)
+    
+    # '더 알아보기' 버튼
+    if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
+        st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
+        break
 
-# 세부정보 표시
-if st.session_state.show_details:
-    place = st.session_state.show_details
+# 선택된 관광지의 세부 정보 표시
+if st.session_state.selected_place:
+    place = st.session_state.selected_place
     st.write("### 세 줄 요약")
     st.write(place["summary"])
     st.write("### 주변 상권")
     st.write(place["surrounding_area"])
-    
-    # 세부정보를 닫는 버튼 추가
-    if st.button("세부정보 닫기"):
-        st.session_state.show_details = None  # 세부정보 초기화
