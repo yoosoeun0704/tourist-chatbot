@@ -452,20 +452,20 @@ if st.button("추천받기"):
         # 필터링된 관광지가 1개만 있을 경우 그 관광지를 추천
         st.session_state.recommended_destinations = filtered_destinations
     else:
-        # 필터링 결과가 없을 경우 "활동" 또는 "환경" 태그만 일치하는 관광지 필터링
+        # 필터링 결과가 없을 경우 "활동" 태그 또는 "환경" 태그만 일치하는 관광지 필터링
         fallback_destinations = [
             destination for destination in destinations
-            if any(tag in activity_answers for tag in destination["tags"]) or
-               any(tag in environment_answers for tag in destination["tags"])
+            if (any(tag in activity_answers for tag in destination["tags"]) or
+                any(tag in environment_answers for tag in destination["tags"]))
         ]
 
-        # 필터링된 결과에서 무작위로 2개 선택 (fallback)
+        # Fallback 결과에서 무작위로 2개 선택
         if len(fallback_destinations) >= 2:
             st.session_state.recommended_destinations = random.sample(fallback_destinations, 2)
         elif len(fallback_destinations) == 1:
             st.session_state.recommended_destinations = fallback_destinations
         else:
-            # fallback도 실패하면 전체 관광지에서 일치 개수 기준으로 상위 2개 추천
+            # Fallback도 실패하면 전체 관광지에서 사용자 답변과 일치하는 태그 개수 기준으로 상위 2개 추천
             matching_scores = []
             for destination in destinations:
                 # 일치하는 태그 수 계산
