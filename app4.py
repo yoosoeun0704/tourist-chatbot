@@ -428,7 +428,7 @@ for i, q in enumerate(questions_options):
 
 # 추천받기 버튼
 if st.button("추천받기"):
-    # 선택된 두 질문에 해당하는 태그들만 추출
+    # 첫 번째와 두 번째 질문에 해당하는 태그들을 필터링
     selected_tags = st.session_state.user_answers[:2]  # 첫 두 개의 질문에 대한 태그들만 사용
 
     recommended_destinations = []
@@ -449,7 +449,6 @@ if st.button("추천받기"):
             # '더 알아보기' 버튼
             if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
                 st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
-                break
     else:
         st.write("해당하는 장소가 없습니다.")
 
