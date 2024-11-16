@@ -440,11 +440,9 @@ if st.button("추천받기"):
 
     # "활동" 태그와 "환경" 태그 모두 포함하는 관광지 필터링
     filtered_destinations = [
-        destination for destination in destinations
-        if all(
-            any(tag in activity_answers for tag in destination["tags"]),  # 활동 태그 포함 여부
-            any(tag in environment_answers for tag in destination["tags"])  # 환경 태그 포함 여부
-        )
+    destination for destination in destinations
+    if any(tag in activity_answers for tag in destination["tags"]) and
+       any(tag in environment_answers for tag in destination["tags"])
     ]
 
     # 필터링된 결과에서 무작위로 2개 선택
