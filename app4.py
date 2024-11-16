@@ -440,6 +440,7 @@ if st.button("추천받기"):
 
     # 추천 장소가 있을 경우 결과 표시
     if recommended_destinations:
+        st.session_state.recommended_destinations = recommended_destinations
         for place in recommended_destinations:
             st.subheader(place["name"])
             st.write(place["description"])
