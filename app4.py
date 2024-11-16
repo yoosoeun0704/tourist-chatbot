@@ -406,8 +406,11 @@ questions_options = [
 ]
 
 
-# Streamlit 앱 레이아웃 설정 
+# Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
+
+# 사용자의 답변을 저장할 리스트
+user_answers = []
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
@@ -420,30 +423,34 @@ if 'selected_place' not in st.session_state:
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
-    st.session_state.user_answers.append(answer)
+    if len(st.session_state.user_answers) < len(questions_options):
+        st.session_state.user_answers.append(answer)
 
 # 추천받기 버튼
 if st.button("추천받기"):
-    # 각 관광지에 대해 두 질문에 모두 해당하는지 확인
+    # 선택된 두 질문에 해당하는 태그들만 추출
+    selected_tags = st.session_state.user_answers[:2]  # 첫 두 개의 질문에 대한 태그들만 사용
+
     recommended_destinations = []
     
+    # 각 관광지가 두 질문에 해당하는 태그를 모두 포함하는지 확인
     for destination in destinations:
-        # 해당 장소가 두 질문에서 선택된 태그를 모두 만족하는지 확인
-        if all(tag in destination["tags"] for tag in st.session_state.user_answers):
+        if all(tag in destination["tags"] for tag in selected_tags):
             recommended_destinations.append(destination)
-    
-    st.session_state.recommended_destinations = recommended_destinations
 
-# 추천 결과 표시
-for place in st.session_state.recommended_destinations:
-    st.subheader(place["name"])
-    st.write(place["description"])
-    st.image(place["image_url"], use_column_width=True)
+    # 추천 장소가 있을 경우 결과 표시
+    if recommended_destinations:
+        for place in recommended_destinations:
+            st.subheader(place["name"])
+            st.write(place["description"])
+            st.image(place["image_url"], use_column_width=True)
 
-    # '더 알아보기' 버튼
-    more_info_button = st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}")
-    if more_info_button:
-        st.session_state.selected_place = place  # 선택된 장소 저장
+            # '더 알아보기' 버튼
+            if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
+                st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
+                break
+    else:
+        st.write("해당하는 장소가 없습니다.")
 
 # 선택된 관광지의 세부 정보 표시
 if st.session_state.selected_place:
