@@ -476,7 +476,7 @@ for place in st.session_state.recommended_destinations:
     # '더 알아보기' 버튼
     if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
         st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
-        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
+          # 한 번 클릭하면 하나만 표시되도록 'break' 추가
 
 # 선택된 관광지의 세부 정보 표시
 if st.session_state.selected_place:
