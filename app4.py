@@ -406,15 +406,17 @@ questions_options = [
 ]
 
 # Streamlit 앱 레이아웃 설정 
-st.title("T.OUR:관광지를 추천해드립니다")
+st.title("T.OUR: 관광지를 추천해드립니다")
+
+user_answers = []  # 사용자의 답변을 저장
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
-if 'selected_place' not in st.session_state:
-    st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
+if 'selected_places' not in st.session_state:
+    st.session_state.selected_places = {}  # 각 장소의 '더 알아보기' 상태 저장
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
@@ -424,9 +426,6 @@ for i, q in enumerate(questions_options):
 
 # 추천 버튼
 if st.button("추천받기"):
-    # 이전에 선택된 장소 초기화
-    st.session_state.selected_place = None  # 더 알아보기 상태 초기화
-    
     # 사용자의 여행 스타일에 해당하는 우선순위 태그들
     priority_tags = ["문화", "역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
                      "문학적 활동", "음악 활동", "무용 활동", "미술 활동", 
@@ -467,13 +466,13 @@ for place in st.session_state.recommended_destinations:
     st.image(place["image_url"], use_column_width=True)
     
     # '더 알아보기' 버튼
-    if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
-        st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
-        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
+    more_info_button = st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}")
+    if more_info_button:
+        # 선택된 장소 정보 저장
+        st.session_state.selected_places[place["name"]] = place
 
 # 선택된 관광지의 세부 정보 표시
-if st.session_state.selected_place:
-    place = st.session_state.selected_place
+for place_name, place in st.session_state.selected_places.items():
     st.write("### 세 줄 요약")
     st.write(place["summary"])
     st.write("### 주변 상권")
