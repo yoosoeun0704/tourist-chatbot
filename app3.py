@@ -418,10 +418,10 @@ if 'recommended_destinations' not in st.session_state:
 if 'selected_place' not in st.session_state:
     st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
 
-# 질문별 우선순위 태그 설정
-activity_priority_tags = ["문화", "역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
-                          "문학적 활동", "음악 활동", "무용 활동", "미술 활동"]
-environment_priority_tags = ["도심", "자연", "유적지"]
+# 질문별 태그 분리
+activity_tags = ["문화", "역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
+                 "문학적 활동", "음악 활동", "무용 활동", "미술 활동"]
+environment_tags = ["도심", "자연", "바다", "유적지"]
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
@@ -433,48 +433,39 @@ for i, q in enumerate(questions_options):
 if st.button("추천받기"):
     # 이전에 선택된 장소 초기화
     st.session_state.selected_place = None  # 더 알아보기 상태 초기화
-    
-    # 각 관광지의 일치하는 태그 개수를 저장
-    matching_scores = []
-    for destination in destinations:
-        # 일치하는 태그 수 계산
-        score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
-        matching_scores.append((destination, score))
 
-    # "어떤 종류의 활동을 즐기시나요?"에 해당하는 태그 포함 관광지 필터링
-    activity_destinations = [
-        destination for destination, _ in matching_scores
-        if any(tag in activity_priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers)
-    ]
-    
-    # "어떤 환경에서 여행을 즐기고 싶으신가요?"에 해당하는 태그 포함 관광지 필터링
-    environment_destinations = [
-        destination for destination, _ in matching_scores
-        if any(tag in environment_priority_tags and tag in destination["tags"] for tag in st.session_state.user_answers)
+    # 사용자 답변 필터링
+    activity_answers = [answer for answer in st.session_state.user_answers if answer in activity_tags]
+    environment_answers = [answer for answer in st.session_state.user_answers if answer in environment_tags]
+
+    # "활동"과 "환경" 모두 포함된 관광지 필터링
+    filtered_destinations = [
+        destination for destination in destinations
+        if all(tag in destination["tags"] for tag in activity_answers) and
+           all(tag in destination["tags"] for tag in environment_answers)
     ]
 
-    # 최종 추천 리스트 초기화
-    recommended_destinations = []
+    # 필터링된 결과에서 무작위로 2개 선택
+    if len(filtered_destinations) >= 2:
+        st.session_state.recommended_destinations = random.sample(filtered_destinations, 2)
+    elif len(filtered_destinations) == 1:
+        # 필터링된 관광지가 1개만 있을 경우 그 관광지를 추천
+        st.session_state.recommended_destinations = filtered_destinations
+    else:
+        # 필터링 결과가 없으면 일치 개수로 상위 관광지를 추천
+        matching_scores = []
+        for destination in destinations:
+            # 일치하는 태그 수 계산
+            score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
+            matching_scores.append((destination, score))
 
-    # 활동 태그 우선순위 적용
-    if len(activity_destinations) > 0:
-        recommended_destinations.extend(activity_destinations)
+        # 일치 태그 개수 기준으로 정렬
+        matching_scores.sort(key=lambda x: x[1], reverse=True)
 
-    # 환경 태그 우선순위 적용
-    if len(environment_destinations) > 0:
-        for destination in environment_destinations:
-            if destination not in recommended_destinations:
-                recommended_destinations.append(destination)
-
-    # 태그로 우선순위 잡은 결과가 부족하면 추가로 일치 개수 기반으로 상위 관광지 보충
-    if len(recommended_destinations) < 2:
-        # 남은 추천 가능 관광지 중 일치 개수 순으로 정렬
-        remaining_destinations = [dest for dest, _ in matching_scores if dest not in recommended_destinations]
-        remaining_destinations.sort(key=lambda x: sum(tag in x["tags"] for tag in st.session_state.user_answers), reverse=True)
-        recommended_destinations.extend(remaining_destinations[:2 - len(recommended_destinations)])
-
-    # 최종 추천을 두 개로 제한
-    st.session_state.recommended_destinations = random.sample(recommended_destinations, min(2, len(recommended_destinations)))
+        # 상위 두 개 선택
+        st.session_state.recommended_destinations = [
+            destination for destination, score in matching_scores[:2]
+        ]
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
