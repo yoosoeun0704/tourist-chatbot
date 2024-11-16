@@ -406,9 +406,7 @@ questions_options = [
 ]
 
 # Streamlit 앱 레이아웃 설정
-st.title("T.OUR:관광지를 추천해드립니다")
-
-user_answers = []  # 사용자의 답변을 저장
+st.title("T.OUR: 관광지를 추천해드립니다")
 
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
@@ -476,3 +474,7 @@ if st.session_state.show_details:
     st.write(place["summary"])
     st.write("### 주변 상권")
     st.write(place["surrounding_area"])
+    
+    # 세부정보를 닫는 버튼 추가
+    if st.button("세부정보 닫기"):
+        st.session_state.show_details = None  # 세부정보 초기화
