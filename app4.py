@@ -464,8 +464,11 @@ for idx, place in enumerate(st.session_state.recommended_destinations):
     st.image(place["image_url"], use_column_width=True)
     
     # '더 알아보기' 버튼
-    if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{idx}"):  # 각 버튼에 고유한 key 부여
-        st.session_state.selected_places.append(place)  # 버튼 클릭 시 선택된 장소 저장
+    button_key = f"more_{idx}"
+    if st.button(f"{place['name']}에 대해 더 알아보기", key=button_key):
+        # '더 알아보기' 클릭 시 선택된 장소를 세션에 추가
+        if place not in st.session_state.selected_places:
+            st.session_state.selected_places.append(place)
 
 # 선택된 관광지의 세부 정보 표시
 for place in st.session_state.selected_places:
