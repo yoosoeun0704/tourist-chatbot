@@ -440,9 +440,9 @@ if st.button("추천받기"):
 
     # "활동" 태그와 "환경" 태그 모두 포함하는 관광지 필터링
     filtered_destinations = [
-    destination for destination in destinations
-    if any(tag in activity_answers for tag in destination["tags"]) and
-       any(tag in environment_answers for tag in destination["tags"])
+        destination for destination in destinations
+        if any(tag in activity_answers for tag in destination["tags"]) and
+           any(tag in environment_answers for tag in destination["tags"])
     ]
 
     # 필터링된 결과에서 무작위로 2개 선택
@@ -452,20 +452,33 @@ if st.button("추천받기"):
         # 필터링된 관광지가 1개만 있을 경우 그 관광지를 추천
         st.session_state.recommended_destinations = filtered_destinations
     else:
-        # 필터링 결과가 없으면 일치 개수로 상위 관광지를 추천
-        matching_scores = []
-        for destination in destinations:
-            # 일치하는 태그 수 계산
-            score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
-            matching_scores.append((destination, score))
-
-        # 일치 태그 개수 기준으로 정렬
-        matching_scores.sort(key=lambda x: x[1], reverse=True)
-
-        # 상위 두 개 선택
-        st.session_state.recommended_destinations = [
-            destination for destination, score in matching_scores[:2]
+        # 필터링 결과가 없을 경우 "활동" 또는 "환경" 태그만 일치하는 관광지 필터링
+        fallback_destinations = [
+            destination for destination in destinations
+            if any(tag in activity_answers for tag in destination["tags"]) or
+               any(tag in environment_answers for tag in destination["tags"])
         ]
+
+        # 필터링된 결과에서 무작위로 2개 선택 (fallback)
+        if len(fallback_destinations) >= 2:
+            st.session_state.recommended_destinations = random.sample(fallback_destinations, 2)
+        elif len(fallback_destinations) == 1:
+            st.session_state.recommended_destinations = fallback_destinations
+        else:
+            # fallback도 실패하면 전체 관광지에서 일치 개수 기준으로 상위 2개 추천
+            matching_scores = []
+            for destination in destinations:
+                # 일치하는 태그 수 계산
+                score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
+                matching_scores.append((destination, score))
+
+            # 일치 태그 개수 기준으로 정렬
+            matching_scores.sort(key=lambda x: x[1], reverse=True)
+
+            # 상위 두 개 선택
+            st.session_state.recommended_destinations = [
+                destination for destination, score in matching_scores[:2]
+            ]
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
@@ -476,7 +489,7 @@ for place in st.session_state.recommended_destinations:
     # '더 알아보기' 버튼
     if st.button(f"{place['name']}에 대해 더 알아보기", key=f"more_{place['name']}"):
         st.session_state.selected_place = place  # 버튼 클릭 시 선택된 장소 저장
-          # 한 번 클릭하면 하나만 표시되도록 'break' 추가
+        break  # 한 번 클릭하면 하나만 표시되도록 'break' 추가
 
 # 선택된 관광지의 세부 정보 표시
 if st.session_state.selected_place:
