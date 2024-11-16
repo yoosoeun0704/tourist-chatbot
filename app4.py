@@ -424,6 +424,9 @@ for i, q in enumerate(questions_options):
 
 # 추천 버튼
 if st.button("추천받기"):
+    # 이전에 선택된 장소 초기화
+    st.session_state.selected_place = None  # 더 알아보기 상태 초기화
+    
     # 사용자의 여행 스타일에 해당하는 우선순위 태그들
     priority_tags = ["문화", "역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
                      "문학적 활동", "음악 활동", "무용 활동", "미술 활동", 
