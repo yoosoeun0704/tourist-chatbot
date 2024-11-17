@@ -412,6 +412,8 @@ st.title("T.OUR: 관광지를 추천해드립니다")
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
+if 'selected_tags' not in st.session_state:
+    st.session_state.selected_tags = []
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
@@ -421,28 +423,24 @@ for i, q in enumerate(questions_options):
 
 # "확인" 버튼: 선택한 태그를 저장
 if st.button("확인"):
-    # 사용자가 선택한 태그들을 세션 상태에 저장
-    user_answers = st.session_state.user_answers
-    st.session_state.selected_tags = user_answers
-    st.write("선택한 태그들:", user_answers)
+    # 선택한 태그들 저장
+    st.session_state.selected_tags = st.session_state.user_answers
+    st.write("선택한 태그들:", st.session_state.selected_tags)
 
 # "추천받기" 버튼: 저장된 태그들로 관광지 추천
 if st.button("추천받기"):
-    # 사용자가 선택한 태그들을 가져오기
     selected_tags = st.session_state.get('selected_tags', [])
     
-    # 태그가 저장되어 있지 않다면 추천하지 않음
     if not selected_tags:
         st.warning("먼저 '확인' 버튼을 눌러 선택한 태그를 저장해주세요.")
     else:
-        # 추천 로직 수정: 선택한 모든 태그와 완전 일치하는 관광지만 추천
+        # 추천 로직 수정: 선택한 모든 태그가 포함된 관광지만 추천
         scored_destinations = []
         for destination in destinations:
-            # 관광지의 tags와 선택된 모든 태그가 일치하는지 확인
-            if set(destination["tags"]) == set(selected_tags):
+            # 관광지의 tags와 사용자가 선택한 태그들이 완전히 일치하는지 확인
+            if all(tag in destination["tags"] for tag in selected_tags):
                 scored_destinations.append(destination)
 
-        # 추천된 관광지 보여주기
         if scored_destinations:
             for place in scored_destinations:
                 st.subheader(place["name"])
