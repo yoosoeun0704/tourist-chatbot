@@ -384,6 +384,15 @@ destinations = [
     }
 ]
 
+# 세션 상태 초기화
+if 'user_answers' not in st.session_state:
+    st.session_state.user_answers = []
+if 'recommended_destinations' not in st.session_state:
+    st.session_state.recommended_destinations = []
+if 'selected_place' not in st.session_state:
+    st.session_state.selected_place = None  # 선택된 관광지 초기화
+
+
 # 질문 및 선택지 설정
 questions_options = [
     {
@@ -408,12 +417,6 @@ questions_options = [
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
 
-# 세션 상태 초기화
-if 'user_answers' not in st.session_state:
-    st.session_state.user_answers = []
-if 'recommended_destinations' not in st.session_state:
-    st.session_state.recommended_destinations = []
-
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
@@ -422,24 +425,19 @@ for i, q in enumerate(questions_options):
 
 # 추천 버튼
 if st.button("추천받기"):
-    # 답변과 일치하는 태그 개수를 기준으로 점수 계산
     user_answers = st.session_state.user_answers
+
+    # 점수 계산
     scored_destinations = []
     for destination in destinations:
-        score = 0
-        if user_answers[0] in destination["tags"]:
-            score += 4  # 첫 번째 답변 가중치
-        if user_answers[1] in destination["tags"]:
-            score += 3  # 두 번째 답변 가중치
-        score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
+        score = sum(1 for answer in user_answers if answer in destination["tags"])
         scored_destinations.append({"destination": destination, "score": score})
 
-    # 점수가 높은 순으로 정렬
+    # 상위 4개에서 2개를 무작위로 추천
     scored_destinations.sort(key=lambda x: x["score"], reverse=True)
-
-    # 상위 네 개에서 두 개를 랜덤으로 선택
     top_destinations = [d["destination"] for d in scored_destinations[:4]]
     st.session_state.recommended_destinations = random.sample(top_destinations, min(2, len(top_destinations)))
+
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
