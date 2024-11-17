@@ -384,14 +384,11 @@ destinations = [
     }
 ]
 
+import streamlit as st
+
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
-    st.session_state.user_answers = []
-if 'recommended_destinations' not in st.session_state:
-    st.session_state.recommended_destinations = []
-if 'selected_place' not in st.session_state:
-    st.session_state.selected_place = None  # 선택된 관광지 초기화
-
+    st.session_state.user_answers = [None] * len(questions_options)  # 질문 개수만큼 초기화
 
 # 질문 및 선택지 설정
 questions_options = [
@@ -411,7 +408,6 @@ questions_options = [
         "question": "여행 중 어떤 것을 가장 중요하게 생각하시나요?",
         "options": ["좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     }
-    
 ]
 
 # Streamlit 앱 레이아웃 설정
@@ -419,9 +415,18 @@ st.title("T.OUR: 관광지를 추천해드립니다")
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
-    answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
-    if len(st.session_state.user_answers) <= i:
-        st.session_state.user_answers.append(answer)
+    # 각 질문에 대해 사용자 선택 저장
+    st.session_state.user_answers[i] = st.selectbox(
+        q["question"],
+        options=q["options"],
+        key=f"question_{i}"
+    )
+
+# 디버깅용: 사용자의 답변 확인
+if st.button("사용자 선택 확인"):
+    st.write("사용자의 선택:")
+    st.write(st.session_state.user_answers)
+
 
 # 추천 버튼
 if st.button("추천받기"):
