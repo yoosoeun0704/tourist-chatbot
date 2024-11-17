@@ -7,7 +7,7 @@ destinations = [
         "name": "경복궁",
         "description": "한국의 전통과 역사를 경험할 수 있는 서울의 대표 유적지입니다.",
         "image_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MDRfODcg%2FMDAxNzI1NDU5OTg1ODcx.20ZW5yxoZO6aCc1Ds-nDzGMyAx-qObh5n9Ke5Jo3HVYg.JA7cHnv7gZ2JWYfRzBJ5s-xZVCq40sBvwqOmLGsZ5kog.JPEG%2F3C4A9776_1.jpg&type=sc960_832",
-        "tags": ["문화/역사 탐방", "도심", "유적지", "문화/역사 체험", "사진 명소", "좋은 접근성"],
+        "tags": ["문화/역사 탐방", "유적지", "문화/역사 체험", "사진 명소", "좋은 접근성"],
         "summary": "경복궁은 조선 왕조의 정궁으로, 궁궐 내부의 아름다운 건축물과 정원이 관광객에게 큰 인기를 끌고 있습니다. 광화문을 중심으로 서울의 역사적인 중심지에 위치해 있으며, 근처에는 다양한 문화재와 박물관도 있습니다. 궁중문화체험과 전통 공연도 즐길 수 있습니다.",
         "surrounding_area": "인사동, 삼청동, 북촌한옥마을, 광화문 일대는 전통적인 한지, 도자기, 고미술품을 파는 상점들과 카페가 많습니다. 관광객들이 많이 찾는 전통 찻집과 한식 맛집들이 위치해 있습니다."
     },
