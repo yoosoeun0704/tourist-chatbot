@@ -407,6 +407,11 @@ questions_options = [
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = [None] * len(questions_options)  # 질문 개수만큼 초기화
+if 'recommended_destinations' not in st.session_state:
+    st.session_state.recommended_destinations = []  # 추천 관광지 리스트 초기화
+if 'selected_place' not in st.session_state:
+    st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
+
 
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
