@@ -405,7 +405,6 @@ questions_options = [
     
 ]
 
-
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
 
@@ -434,11 +433,11 @@ if st.button("추천받기"):
     if not selected_tags:
         st.warning("먼저 '확인' 버튼을 눌러 선택한 태그를 저장해주세요.")
     else:
-        # 추천 로직 수정: 선택한 모든 태그가 포함된 관광지만 추천
+        # 추천 로직 수정: 선택한 태그가 관광지의 태그들 중에 포함되는 경우만 추천
         scored_destinations = []
         for destination in destinations:
-            # 관광지의 tags와 사용자가 선택한 태그들이 완전히 일치하는지 확인
-            if all(tag in destination["tags"] for tag in selected_tags):
+            # 관광지의 tags에 사용자가 선택한 태그들이 포함되었는지 확인
+            if any(tag in destination["tags"] for tag in selected_tags):
                 scored_destinations.append(destination)
 
         if scored_destinations:
