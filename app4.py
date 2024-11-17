@@ -438,20 +438,13 @@ if st.button("추천받기"):
         # 태그와 일치하는 관광지 찾기
         scored_destinations = []
         for destination in destinations:
-            score = 0
-            # 선택한 태그들과 일치하는 태그 수를 카운팅
-            for tag in selected_tags:
-                if tag in destination["tags"]:
-                    score += 1
-            scored_destinations.append({"destination": destination, "score": score})
+            # 선택한 태그와 관광지의 태그들이 완전히 일치하는지 확인
+            if set(selected_tags).issubset(set(destination["tags"])):
+                scored_destinations.append(destination)
 
-        # 점수가 높은 관광지 추천 (상위 2개)
-        scored_destinations.sort(key=lambda x: x["score"], reverse=True)
-        recommended_destinations = [d["destination"] for d in scored_destinations if d["score"] > 0][:2]
-
-        if recommended_destinations:
-            # 추천된 관광지 보여주기
-            for place in recommended_destinations:
+        # 추천된 관광지 보여주기
+        if scored_destinations:
+            for place in scored_destinations:
                 st.subheader(place["name"])
                 st.write(place["description"])
                 st.image(place["image_url"], use_column_width=True)
