@@ -435,11 +435,11 @@ if st.button("추천받기"):
     if not selected_tags:
         st.warning("먼저 '확인' 버튼을 눌러 선택한 태그를 저장해주세요.")
     else:
-        # 태그와 일치하는 관광지 찾기
+        # 추천 로직 수정: 선택한 모든 태그와 완전 일치하는 관광지만 추천
         scored_destinations = []
         for destination in destinations:
-            # 선택한 태그와 관광지의 태그들이 완전히 일치하는지 확인
-            if set(selected_tags).issubset(set(destination["tags"])):
+            # 관광지의 tags와 선택된 모든 태그가 일치하는지 확인
+            if set(destination["tags"]) == set(selected_tags):
                 scored_destinations.append(destination)
 
         # 추천된 관광지 보여주기
