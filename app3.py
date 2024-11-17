@@ -438,14 +438,20 @@ if st.button("추천받기"):
     # 점수 계산
     scored_destinations = []
     for destination in destinations:
-        score = sum(1 for answer in user_answers if answer in destination["tags"])
+        score = 0
+        if user_answers[0] in destination["tags"]:
+            score += 4  # 첫 번째 답변 가중치
+        if user_answers[1] in destination["tags"]:
+            score += 3  # 두 번째 답변 가중치
+        score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
         scored_destinations.append({"destination": destination, "score": score})
 
-    # 상위 4개에서 2개를 무작위로 추천
+    # 점수가 높은 순으로 정렬
     scored_destinations.sort(key=lambda x: x["score"], reverse=True)
+
+    # 상위 네 개에서 두 개를 랜덤으로 선택
     top_destinations = [d["destination"] for d in scored_destinations[:4]]
     st.session_state.recommended_destinations = random.sample(top_destinations, min(2, len(top_destinations)))
-
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
