@@ -424,26 +424,22 @@ for i, q in enumerate(questions_options):
 if st.button("추천받기"):
     # 답변과 일치하는 태그 개수를 기준으로 점수 계산
     user_answers = st.session_state.user_answers
-    first_answer = user_answers[0]  # 첫 번째 답변
-    second_answer = user_answers[1]  # 두 번째 답변
-
     scored_destinations = []
     for destination in destinations:
         score = 0
-        # 첫 번째와 두 번째 답변에 대해 각각 가중치 부여
-        if first_answer in destination["tags"]:
-            score += 10  # 첫 번째 답변 가중치
-        if second_answer in destination["tags"]:
-            score += 10  # 두 번째 답변 가중치
-        # 나머지 답변에 대해서는 기본 점수 부여
+        if user_answers[0] in destination["tags"]:
+            score += 2  # 첫 번째 답변 가중치
+        if user_answers[1] in destination["tags"]:
+            score += 2  # 두 번째 답변 가중치
         score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
         scored_destinations.append({"destination": destination, "score": score})
 
     # 점수가 높은 순으로 정렬
     scored_destinations.sort(key=lambda x: x["score"], reverse=True)
 
-    # 상위 두 개 추천
-    st.session_state.recommended_destinations = [d["destination"] for d in scored_destinations[:2]]
+    # 상위 네 개에서 두 개를 랜덤으로 선택
+    top_destinations = [d["destination"] for d in scored_destinations[:4]]
+    st.session_state.recommended_destinations = random.sample(top_destinations, min(2, len(top_destinations)))
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
