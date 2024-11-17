@@ -384,12 +384,6 @@ destinations = [
     }
 ]
 
-import streamlit as st
-
-# 세션 상태 초기화
-if 'user_answers' not in st.session_state:
-    st.session_state.user_answers = [None] * len(questions_options)  # 질문 개수만큼 초기화
-
 # 질문 및 선택지 설정
 questions_options = [
     {
@@ -409,6 +403,10 @@ questions_options = [
         "options": ["좋은 접근성", "독특한 장소", "저렴한 가격", "안전하고 편안한 환경"]
     }
 ]
+
+# 세션 상태 초기화
+if 'user_answers' not in st.session_state:
+    st.session_state.user_answers = [None] * len(questions_options)  # 질문 개수만큼 초기화
 
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
