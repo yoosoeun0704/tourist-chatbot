@@ -428,9 +428,9 @@ if st.button("추천받기"):
     for destination in destinations:
         score = 0
         if user_answers[0] in destination["tags"]:
-            score += 2  # 첫 번째 답변 가중치
+            score += 4  # 첫 번째 답변 가중치
         if user_answers[1] in destination["tags"]:
-            score += 2  # 두 번째 답변 가중치
+            score += 3  # 두 번째 답변 가중치
         score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
         scored_destinations.append({"destination": destination, "score": score})
 
