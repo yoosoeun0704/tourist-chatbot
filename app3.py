@@ -405,8 +405,6 @@ questions_options = [
     
 ]
 
-import random
-
 # Streamlit 앱 레이아웃 설정
 st.title("T.OUR: 관광지를 추천해드립니다")
 
@@ -415,70 +413,37 @@ if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
 if 'recommended_destinations' not in st.session_state:
     st.session_state.recommended_destinations = []
-if 'selected_place' not in st.session_state:
-    st.session_state.selected_place = None  # 더 알아보기 버튼 클릭 시 선택된 장소 저장
-
-# 질문별 태그 분리
-activity_tags = ["문화/역사 탐방", "자연 탐험", "쇼핑", "액티비티", 
-                 "문학적 활동", "음악 활동", "무용 활동", "미술 활동"]
-environment_tags = ["도심", "자연", "유적지"]
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
     answer = st.selectbox(q["question"], options=q["options"], key=f"question_{i}")
-    if len(st.session_state.user_answers) < len(questions_options):
+    if len(st.session_state.user_answers) <= i:
         st.session_state.user_answers.append(answer)
 
 # 추천 버튼
 if st.button("추천받기"):
-    # 이전에 선택된 장소 초기화
-    st.session_state.selected_place = None  # 더 알아보기 상태 초기화
+    # 답변과 일치하는 태그 개수를 기준으로 점수 계산
+    user_answers = st.session_state.user_answers
+    first_answer = user_answers[0]  # 첫 번째 답변
+    second_answer = user_answers[1]  # 두 번째 답변
 
-    # 사용자 답변 필터링
-    activity_answers = [answer for answer in st.session_state.user_answers if answer in activity_tags]
-    environment_answers = [answer for answer in st.session_state.user_answers if answer in environment_tags]
+    scored_destinations = []
+    for destination in destinations:
+        score = 0
+        # 첫 번째와 두 번째 답변에 대해 각각 가중치 부여
+        if first_answer in destination["tags"]:
+            score += 10  # 첫 번째 답변 가중치
+        if second_answer in destination["tags"]:
+            score += 10  # 두 번째 답변 가중치
+        # 나머지 답변에 대해서는 기본 점수 부여
+        score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
+        scored_destinations.append({"destination": destination, "score": score})
 
-    # "활동" 태그와 "환경" 태그 모두 포함하는 관광지 필터링
-    filtered_destinations = [
-        destination for destination in destinations
-        if any(tag in activity_answers for tag in destination["tags"]) and
-           any(tag in environment_answers for tag in destination["tags"])
-    ]
+    # 점수가 높은 순으로 정렬
+    scored_destinations.sort(key=lambda x: x["score"], reverse=True)
 
-    # 필터링된 결과에서 무작위로 2개 선택
-    if len(filtered_destinations) >= 2:
-        st.session_state.recommended_destinations = random.sample(filtered_destinations, 2)
-    elif len(filtered_destinations) == 1:
-        # 필터링된 관광지가 1개만 있을 경우 그 관광지를 추천
-        st.session_state.recommended_destinations = filtered_destinations
-    else:
-        # 필터링 결과가 없을 경우 "활동" 태그 또는 "환경" 태그만 일치하는 관광지 필터링
-        fallback_destinations = [
-            destination for destination in destinations
-            if (any(tag in activity_answers for tag in destination["tags"]) or
-                any(tag in environment_answers for tag in destination["tags"]))
-        ]
-
-        # Fallback 결과에서 무작위로 2개 선택
-        if len(fallback_destinations) >= 2:
-            st.session_state.recommended_destinations = random.sample(fallback_destinations, 2)
-        elif len(fallback_destinations) == 1:
-            st.session_state.recommended_destinations = fallback_destinations
-        else:
-            # Fallback도 실패하면 전체 관광지에서 사용자 답변과 일치하는 태그 개수 기준으로 상위 2개 추천
-            matching_scores = []
-            for destination in destinations:
-                # 일치하는 태그 수 계산
-                score = sum(tag in destination["tags"] for tag in st.session_state.user_answers)
-                matching_scores.append((destination, score))
-
-            # 일치 태그 개수 기준으로 정렬
-            matching_scores.sort(key=lambda x: x[1], reverse=True)
-
-            # 상위 두 개 선택
-            st.session_state.recommended_destinations = [
-                destination for destination, score in matching_scores[:2]
-            ]
+    # 상위 두 개 추천
+    st.session_state.recommended_destinations = [d["destination"] for d in scored_destinations[:2]]
 
 # 추천 결과 표시
 for place in st.session_state.recommended_destinations:
