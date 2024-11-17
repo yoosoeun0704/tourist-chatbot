@@ -412,8 +412,6 @@ st.title("T.OUR: 관광지를 추천해드립니다")
 # 세션 상태 초기화
 if 'user_answers' not in st.session_state:
     st.session_state.user_answers = []
-if 'recommended_destinations' not in st.session_state:
-    st.session_state.recommended_destinations = []
 
 # 각 질문에 대해 선택할 수 있도록 UI를 구성
 for i, q in enumerate(questions_options):
@@ -421,38 +419,38 @@ for i, q in enumerate(questions_options):
     if len(st.session_state.user_answers) <= i:
         st.session_state.user_answers.append(answer)
 
-# 추천 버튼
-if st.button("추천받기"):
-    # 답변과 일치하는 태그 개수를 기준으로 점수 계산
+# 확인 버튼: 사용자가 선택한 태그를 저장
+if st.button("확인"):
+    # 사용자가 선택한 답변을 기반으로 추천받기
     user_answers = st.session_state.user_answers
-    first_answer = user_answers[0]  # 첫 번째 답변
-    second_answer = user_answers[1]  # 두 번째 답변
 
+    # 태그를 기반으로 추천할 관광지 선정
     scored_destinations = []
     for destination in destinations:
         score = 0
-        # 첫 번째와 두 번째 답변에 대해 각각 가중치 부여
-        if first_answer in destination["tags"]:
-            score += 10  # 첫 번째 답변 가중치
-        if second_answer in destination["tags"]:
-            score += 10  # 두 번째 답변 가중치
-        # 나머지 답변에 대해서는 기본 점수 부여
-        score += sum(1 for answer in user_answers[2:] if answer in destination["tags"])
+        # 각 답변에 대해 태그 매칭 확인
+        for answer in user_answers:
+            if answer in destination["tags"]:
+                score += 1  # 선택된 태그와 일치하면 점수 부여
         scored_destinations.append({"destination": destination, "score": score})
 
     # 점수가 높은 순으로 정렬
     scored_destinations.sort(key=lambda x: x["score"], reverse=True)
 
     # 상위 두 개 추천
-    st.session_state.recommended_destinations = [d["destination"] for d in scored_destinations[:2]]
+    recommended_destinations = [d["destination"] for d in scored_destinations[:2]]
+
+    # 추천 결과 표시
+    st.session_state.recommended_destinations = recommended_destinations
 
 # 추천 결과 표시
-for place in st.session_state.recommended_destinations:
-    st.subheader(place["name"])
-    st.write(place["description"])
-    st.image(place["image_url"], use_column_width=True)
-    with st.expander(f"더 알아보기: {place['name']}"):
-        st.write("### 세 줄 요약")
-        st.write(place["summary"])
-        st.write("### 주변 상권")
-        st.write(place["surrounding_area"])
+if 'recommended_destinations' in st.session_state and len(st.session_state.recommended_destinations) > 0:
+    for place in st.session_state.recommended_destinations:
+        st.subheader(place["name"])
+        st.write(place["description"])
+        st.image(place["image_url"], use_column_width=True)
+        with st.expander(f"더 알아보기: {place['name']}"):
+            st.write("### 세 줄 요약")
+            st.write(place["summary"])
+            st.write("### 주변 상권")
+            st.write(place["surrounding_area"])
